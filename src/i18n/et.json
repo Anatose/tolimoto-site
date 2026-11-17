@@ -85,8 +85,8 @@
   "ui_install": "Installi",
   "sheet_title": "Siit kõik algas.",
   "sheet_lead": "Tasuta Google'i tabeli mall: hooldusgraafik, tööde ajalugu ja kulud aastate kaupa. Tee endale koopia ja pea oma ratta arvestust.",
-  "btn_template": "Ava mall (vene keeles)",
-  "sheet_langs_note": "Praegu vene keeles. Eesti, inglise, poola, läti ja ukraina versioonid on tulemas.",
+  "btn_template": "Kopeeri mall",
+  "sheet_langs_note": "Teised keeled — avaneb Google'i tabel nupuga „Tee koopia”; koopia tekib sinu Drive'i.",
   "fx_item": "Sõlm",
   "fx_interval": "Intervall",
   "fx_last": "Viimati",
@@ -110,5 +110,9 @@
   "pv_title": "Privaatsuspoliitika",
   "pv_desc": "Kuidas Tolimoto Log ja tolimoto.com sinu andmeid käsitlevad.",
   "pv_updated": "Viimati uuendatud 17. novembril 2026",
-  "pv_translation": "See on mugavuse huvides tehtud tõlge; lahknevuse korral kehtib ingliskeelne versioon."
+  "pv_translation": "See on mugavuse huvides tehtud tõlge; lahknevuse korral kehtib ingliskeelne versioon.",
+  "shot_open": "Suurenda",
+  "close": "Sulge",
+  "prev": "Eelmine samm",
+  "next": "Järgmine samm"
 }

@@ -85,8 +85,8 @@
   "ui_install": "Zainstaluj",
   "sheet_title": "Od tego wszystko się zaczęło.",
   "sheet_lead": "Darmowy szablon Arkuszy Google: harmonogram serwisu, historia prac i wydatki w podziale na lata. Zrób kopię i prowadź swój motocykl.",
-  "btn_template": "Otwórz szablon (po rosyjsku)",
-  "sheet_langs_note": "Na razie po rosyjsku. Wersje polska, angielska, estońska, łotewska i ukraińska są w przygotowaniu.",
+  "btn_template": "Skopiuj szablon",
+  "sheet_langs_note": "Inne języki — otworzy się Arkusz Google z przyciskiem „Utwórz kopię”; kopia trafi na Twój Dysk.",
   "fx_item": "Element",
   "fx_interval": "Interwał",
   "fx_last": "Ostatnio",
@@ -110,5 +110,9 @@
   "pv_title": "Polityka prywatności",
   "pv_desc": "Jak Tolimoto Log i tolimoto.com obchodzą się z Twoimi danymi.",
   "pv_updated": "Ostatnia aktualizacja: 17 listopada 2026",
-  "pv_translation": "To tłumaczenie dla wygody; w razie rozbieżności obowiązuje wersja angielska."
+  "pv_translation": "To tłumaczenie dla wygody; w razie rozbieżności obowiązuje wersja angielska.",
+  "shot_open": "Powiększ",
+  "close": "Zamknij",
+  "prev": "Poprzedni krok",
+  "next": "Następny krok"
 }

@@ -85,8 +85,8 @@
   "ui_install": "Install",
   "sheet_title": "Where it all started.",
   "sheet_lead": "A free Google Sheets template: maintenance schedule, service history and yearly spending. Make a copy and log your own bike.",
-  "btn_template": "Open the template (Russian)",
-  "sheet_langs_note": "Russian for now. English, Estonian, Polish, Latvian and Ukrainian versions are on the way.",
+  "btn_template": "Copy the template",
+  "sheet_langs_note": "Other languages — opens Google Sheets with a “Make a copy” button; the copy lands in your own Drive.",
   "fx_item": "Item",
   "fx_interval": "Interval",
   "fx_last": "Last done",
@@ -110,5 +110,9 @@
   "pv_title": "Privacy policy",
   "pv_desc": "How Tolimoto Log and tolimoto.com handle your data.",
   "pv_updated": "Last updated 17 November 2026",
-  "pv_translation": "This is a translation for convenience; if anything differs, the English version applies."
+  "pv_translation": "This is a translation for convenience; if anything differs, the English version applies.",
+  "shot_open": "Enlarge",
+  "close": "Close",
+  "prev": "Previous step",
+  "next": "Next step"
 }

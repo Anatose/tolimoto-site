@@ -85,8 +85,8 @@
   "ui_install": "Instalēt",
   "sheet_title": "Šeit viss sākās.",
   "sheet_lead": "Bezmaksas Google tabulas veidne: apkopes grafiks, darbu vēsture un izdevumi pa gadiem. Izveidojiet kopiju un uzskaitiet savu motociklu.",
-  "btn_template": "Atvērt veidni (krievu valodā)",
-  "sheet_langs_note": "Pagaidām krievu valodā. Latviešu, angļu, igauņu, poļu un ukraiņu versijas tiek gatavotas.",
+  "btn_template": "Kopēt veidni",
+  "sheet_langs_note": "Citas valodas — atvērsies Google tabula ar pogu “Izveidot kopiju”; kopija parādīsies jūsu Diskā.",
   "fx_item": "Mezgls",
   "fx_interval": "Intervāls",
   "fx_last": "Pēdējo reizi",
@@ -110,5 +110,9 @@
   "pv_title": "Privātuma politika",
   "pv_desc": "Kā Tolimoto Log un tolimoto.com apietas ar jūsu datiem.",
   "pv_updated": "Atjaunināts 2026. gada 17. novembrī",
-  "pv_translation": "Šis ir tulkojums ērtībai; neatbilstību gadījumā noteicošā ir angļu valodas versija."
+  "pv_translation": "Šis ir tulkojums ērtībai; neatbilstību gadījumā noteicošā ir angļu valodas versija.",
+  "shot_open": "Palielināt",
+  "close": "Aizvērt",
+  "prev": "Iepriekšējais solis",
+  "next": "Nākamais solis"
 }

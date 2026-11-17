@@ -26,6 +26,46 @@
   })
   if (tabs.length && /android/i.test(navigator.userAgent)) pick(tabs[1])
 
+  // install pictures open large, with previous / next step
+  var lb = document.getElementById('lightbox')
+  if (lb) {
+    var stage = lb.querySelector('.lb-stage'), cap = lb.querySelector('figcaption')
+    var prev = lb.querySelector('.lb-prev'), next = lb.querySelector('.lb-next'), list = [], at = 0, opener = null
+    function fit() {
+      var m = stage.firstElementChild; if (!m) return
+      var z = Math.min((window.innerHeight - (window.innerWidth < 600 ? 270 : 190)) / (200 * 17 / 9), (window.innerWidth - (window.innerWidth < 600 ? 48 : 180)) / 200)
+      z = Math.max(1, Math.min(z, 3.2))
+      stage.style.zoom = z
+    }
+    function show(i) {
+      at = i
+      var li = list[i]
+      stage.innerHTML = ''; stage.appendChild(li.querySelector('.mock').cloneNode(true))
+      cap.innerHTML = li.querySelector('.st-txt').innerHTML
+      prev.disabled = i === 0; next.disabled = i === list.length - 1
+      fit()
+    }
+    function close() { lb.hidden = true; document.body.style.overflow = ''; if (opener) opener.focus() }
+    document.querySelectorAll('.steps .zoom').forEach(function (b) {
+      b.addEventListener('click', function () {
+        list = [].slice.call(b.closest('.steps').children); opener = b
+        lb.hidden = false; document.body.style.overflow = 'hidden'
+        show(list.indexOf(b.closest('li'))); lb.querySelector('.lb-close').focus()
+      })
+    })
+    prev.addEventListener('click', function () { if (at > 0) show(at - 1) })
+    next.addEventListener('click', function () { if (at < list.length - 1) show(at + 1) })
+    lb.querySelector('.lb-close').addEventListener('click', close)
+    lb.addEventListener('click', function (e) { if (e.target === lb) close() })
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return
+      if (e.key === 'Escape') close()
+      if (e.key === 'ArrowLeft' && at > 0) show(at - 1)
+      if (e.key === 'ArrowRight' && at < list.length - 1) show(at + 1)
+    })
+    window.addEventListener('resize', fit)
+  }
+
   var bar = document.getElementById('bar')
   function onScroll() { if (bar && !bar.classList.contains('fixed-solid')) bar.classList.toggle('solid', window.scrollY > 20 || document.body.classList.contains('doc-page')) }
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll()

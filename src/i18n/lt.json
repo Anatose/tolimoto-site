@@ -85,8 +85,8 @@
   "ui_install": "Įdiegti",
   "sheet_title": "Nuo to viskas prasidėjo.",
   "sheet_lead": "Nemokamas Google lentelės šablonas: priežiūros grafikas, darbų istorija ir išlaidos pagal metus. Pasidarykite kopiją ir veskite savo motociklo apskaitą.",
-  "btn_template": "Atidaryti šabloną (rusų kalba)",
-  "sheet_langs_note": "Kol kas rusų kalba. Anglų, estų, lenkų, latvių ir ukrainiečių versijos ruošiamos.",
+  "btn_template": "Kopijuoti šabloną",
+  "sheet_langs_note": "Kitos kalbos — atsidarys Google lentelė su mygtuku „Kurti kopiją“; kopija atsiras jūsų Diske.",
   "fx_item": "Mazgas",
   "fx_interval": "Intervalas",
   "fx_last": "Paskutinį kartą",
@@ -110,5 +110,9 @@
   "pv_title": "Privatumo politika",
   "pv_desc": "Kaip Tolimoto Log ir tolimoto.com tvarko jūsų duomenis.",
   "pv_updated": "Atnaujinta 2026 m. lapkričio 17 d.",
-  "pv_translation": "Tai vertimas patogumui; jei kas nors skiriasi, galioja angliška versija."
+  "pv_translation": "Tai vertimas patogumui; jei kas nors skiriasi, galioja angliška versija.",
+  "shot_open": "Padidinti",
+  "close": "Uždaryti",
+  "prev": "Ankstesnis žingsnis",
+  "next": "Kitas žingsnis"
 }

@@ -27,6 +27,16 @@ LANGS = [
     {'code': 'pl', 'name': 'Polski', 'og': 'pl_PL'},
 ]
 PAGES = ['index.html', 'privacy.html']
+# free "Таблица ТО" templates on Google Drive (shared: anyone with the link can view and copy)
+SHEETS = {
+    'ru': '1vLzkDTCo8svfaQh1OFcyItb7-uFBU4DDBavEcUBHORM',
+    'en': '1N_7td_xjhrhNCM4Fejr9RKJ0LtwrDHeLPK0VAWpPvxI',
+    'uk': '15IrY4IZZR_cIdLQ-rHKxUmOOFppUJAZKpwgVqxcO5yY',
+    'et': '1BjA5yK4oM8WUFzaFbe4qejj1hRdIHpVnZpjkI02lk1c',
+    'lv': '1710mBytMHqzRVZQqLM_lzlGM_3II1aoxXLIhhnvoRY8',
+    'lt': '1q3f6ZT8eqh1f759MH_ifIfGtPYa6qZ6jimb3JCjr4dQ',
+    'pl': '1lYPzGOHZ_evwnoyYOqa3Yb7vnqTWwhtu_ORm-asZeKU',
+}
 
 
 def texts(code):
@@ -57,7 +67,7 @@ def main():
 
         for page in PAGES:
             ctx = dict(lang=code, L=L, langs=LANGS, lang_codes=codes, t=t, R=R, page=page, link=link, abs=abs_url,
-                       shots='ru' if code == 'ru' else 'en')
+                       shots='ru' if code == 'ru' else 'en', sheets=SHEETS, sheet_lang=code if code in SHEETS else 'en')
             if page == 'privacy.html':
                 ctx['body'] = Markup((SRC / 'privacy' / f'{code}.html').read_text('utf-8'))
             html = env.get_template(page).render(**ctx)
