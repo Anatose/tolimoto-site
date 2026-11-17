@@ -1,0 +1,86 @@
+<section id="start">
+  <h2>Pirmie soļi</h2>
+  <ol class="g-steps">
+    <li><b>Pievienojiet transportlīdzekli.</b> Nosaukums, motocikls vai auto, valūta un pašreizējais nobraukums. Atstājiet ieslēgtu “Tipisko komplektu” — lietotne pati aizpildīs apkopes grafiku (eļļa, filtri, ķēde, bremžu šķidrums…), to vēlāk var mainīt.</li>
+    <li><b>Ierakstiet uzpildi.</b> Lielā zilā poga pirmajā ekrānā. Ievadiet nobraukumu, litrus un čeka summu (vai litra cenu — otru aprēķinās pati). Atzīmējiet “Pilna tvertne”, kad uzpildāt līdz galam: patēriņu rēķina starp pilnām tvertnēm.</li>
+    <li><b>Vairāki transportlīdzekļi?</b> Pārvelciet karti ekrāna “Garāža” augšā. Uzpildes poga vienmēr darbojas parādītajam transportlīdzeklim.</li>
+    <li><b>Tikai nobraukums.</b> “Atjaunināt” kartē ieraksta nobraukumu bez uzpildes — ērti pirms apkopes.</li>
+  </ol>
+  <p class="g-note">Lietotnes saskarne pagaidām ir angļu un krievu valodā; pogu nosaukumi zemāk ir tulkoti.</p>
+</section>
+
+<section id="schedule">
+  <h2>Darbi un apkopes grafiks</h2>
+  <p>Katrs darbs ir ieraksts: datums, nobraukums, kategorija (Apkope, Patēriņa materiāli, Remonts, Aksesuāri), kas izdarīts, detaļu un darba izmaksas, piezīmes un čeku foto.</p>
+  <ul>
+    <li><b>Mezgli un birkas.</b> Nomainījāt eļļu — atzīmējiet mezglu “Motoreļļa” (birka <code>#engineoil</code>). Tā lietotne zina, kad tas darīts pēdējo reizi.</li>
+    <li><b>Grafiks.</b> Katram mezglam ir intervāls kilometros un/vai dienās. Lietotne rāda, cik atlicis, un iekrāso statusu: <span class="g-ok">Kārtībā</span>, <span class="g-soon">Drīz</span>, <span class="g-over">Nokavēts</span>.</li>
+    <li><b>Savi mezgli.</b> “+ Mezgls” grafika ekrānā: nosaukums, birka, intervāls un piezīme no lietošanas instrukcijas (eļļas daudzums, pievilkšanas momenti).</li>
+  </ul>
+</section>
+
+<section id="log">
+  <h2>Žurnāls un statistika</h2>
+  <ul>
+    <li><b>Žurnāls</b> — visi ieraksti vienā sarakstā: meklēšana pēc teksta un detaļu numuriem, filtri pēc darbiem, uzpildēm un izdevumiem, datumu periods. Katrai uzpildei ir savs patēriņš: zaļš, kad tas ir manāmi zem vidējā, sarkans — kad krietni virs.</li>
+    <li><b>Statistika</b> — izdevumi pa gadiem (apkope un remonts, aksesuāri, degviela, apdrošināšana un citi), kilometra cena, vidējais patēriņš un grafiki. Pieskarieties rindai — redzēsiet, no kā tā sastāv.</li>
+    <li><b>Izdevumi</b> — apdrošināšana, tehniskā apskate, nodoklis un viss pārējais, ar pogu “+”.</li>
+  </ul>
+</section>
+
+<section id="import">
+  <h2>Pāreja no Fuelly vai Fuelio</h2>
+  <ul>
+    <li><b>Fuelly:</b> fuelly.com atveriet savu transportlīdzekli → eksportējiet uzpildes CSV formātā.</li>
+    <li><b>Fuelio:</b> izveidojiet Fuelio CSV rezerves kopiju; tur katram transportlīdzeklim ir atsevišķs fails (<code>vehicle-…-sync.csv</code>). Var izvēlēties vairākus failus uzreiz. Arī Fuelio izdevumi tiek pārnesti: darbi — žurnālā, apdrošināšana un nodokļi — izdevumos.</li>
+    <li>Tolimoto Log: Iestatījumi → “Imports no Fuelly vai Fuelio (CSV)”, pēc tam izvēlieties, kuram transportlīdzeklim pieder katrs fails. Jūdzes un galoni tiek pārrēķināti. Atkārtots tā paša faila imports aizstāj ierakstus, nevis tos dublē.</li>
+  </ul>
+</section>
+
+<section id="google">
+  <h2>Google tabula un foto</h2>
+  <ul>
+    <li>Iestatījumi → “Pieteikties ar Google”. Lietotne izveidos jūsu Google Diskā mapi “Tolimoto Log” ar tabulu un mapi “Receipts” foto glabāšanai.</li>
+    <li>Sinhronizācija notiek pati: atverot lietotni, pēc katras izmaiņas un kad atgriežas tīkls. Ierakstus var labot arī tabulā — izmaiņas atgriezīsies lietotnē.</li>
+    <li>Cilni “Summary” (kopsavilkums: grafiks, pašreizējais nobraukums, izdevumi pa gadiem) veido lietotne. Datus labojiet pārējās cilnēs.</li>
+    <li>Lietotne redz tikai failus, ko pati izveidojusi. Vairāk — <a href="{{PRIVACY}}">privātuma politikā</a>.</li>
+  </ul>
+  <p class="g-note">Beta laikā pieteikšanās ar Google ir atvērta tikai testētājiem. Pārējiem — rezerves kopijas (zemāk).</p>
+</section>
+
+<section id="data" class="g-key">
+  <h2>Kā nepazaudēt datus</h2>
+  <p class="g-lead">Bez Google jūsu ieraksti dzīvo <b>tikai lietotnē šajā tālrunī</b>. Pazaudējāt vai salauzāt tālruni, izdzēsāt lietotni — ieraksti zuduši. Izvēlieties vienu no diviem veidiem un iestatiet to šodien.</p>
+  <div class="g-two">
+    <div class="g-card">
+      <span class="mono">1 · iesakām</span>
+      <b>Google tabula</b>
+      <p>Viss pats kopējas uz jūsu Google Disku. Jauns tālrunis: instalējiet lietotni, piesakieties tajā pašā kontā — viss atgriezīsies.</p>
+    </div>
+    <div class="g-card">
+      <span class="mono">2 · bez Google</span>
+      <b>Rezerves kopijas fails</b>
+      <p>Iestatījumi → “Datu drošība” → “Saglabāt rezerves kopiju”. Saglabājiet JSON failu <b>ne tikai tālrunī</b>: iCloud Drive, Google Diskā vai nosūtiet sev pa e-pastu. Lietotne atgādina reizi mēnesī un rāda pēdējās kopijas datumu.</p>
+    </div>
+  </div>
+  <h3>Jauns tālrunis</h3>
+  <ol class="g-steps">
+    <li>Instalējiet lietotni (skatīt augstāk) un atveriet to no ikonas.</li>
+    <li>Ekrānā “Kur glabāt jūsu ierakstus?” izvēlieties “Pievienot Google” — vai “Atjaunot no rezerves kopijas” un norādiet JSON failu.</li>
+  </ol>
+  <h3>Kas izdzēš datus</h3>
+  <ul>
+    <li>Lietotnes noņemšana no iPhone sākuma ekrāna izdzēš arī tās ierakstus. Vispirms izveidojiet kopiju.</li>
+    <li>Vietņu datu notīrīšana pārlūka iestatījumos arī var tos izdzēst.</li>
+    <li>Ieraksti Safari cilnē un instalētajā lietotnē ir atsevišķi. Vispirms instalējiet, tad rakstiet.</li>
+  </ul>
+</section>
+
+<section id="faq">
+  <h2>Jautājumi</h2>
+  <details><summary>Vai Tolimoto redz manus ierakstus?</summary><p>Nē. Tolimoto nav servera: dati paliek jūsu tālrunī un, ja pievienojat, jūsu pašu Google Diskā.</p></details>
+  <details><summary>Vai darbojas bez interneta?</summary><p>Jā. Viss darbojas bez tīkla; sinhronizācija ar Google panāks, kad tīkls atgriezīsies.</p></details>
+  <details><summary>Vai var uzskaitīt vairākus motociklus un auto?</summary><p>Jā, cik vien vēlaties. Katram ir savs grafiks, žurnāls un statistika.</p></details>
+  <details><summary>Un Android?</summary><p>Lietotne darbojas Chrome pārlūkā Android ierīcēs un instalējas no tā izvēlnes. Tā vispirms tika veidota un pārbaudīta iPhone — ja kaut kas nav kārtībā, <a href="mailto:contact@tolimoto.com">rakstiet mums</a>.</p></details>
+  <details><summary>Kur uzdot jautājumu vai ziņot par kļūdu?</summary><p><a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a> vai <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>.</p></details>
+</section>

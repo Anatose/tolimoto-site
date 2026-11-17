@@ -114,5 +114,15 @@
   "shot_open": "Padidinti",
   "close": "Uždaryti",
   "prev": "Ankstesnis žingsnis",
-  "next": "Kitas žingsnis"
+  "next": "Kitas žingsnis",
+  "nav_guide": "Kaip naudotis",
+  "hw1_t": "Įdiegimas per minutę",
+  "hw1_d": "iPhone ir Android, žingsnis po žingsnio su paveikslėliais.",
+  "hw2_t": "Pirmieji žingsniai",
+  "hw2_d": "Transporto priemonė, pylimas, grafikas, importas iš Fuelly ir Fuelio.",
+  "hw3_t": "Kaip neprarasti duomenų",
+  "hw3_d": "Naujas telefonas, pamestas telefonas, ištrinta programėlė — perskaitykite prieš pradėdami.",
+  "guide_title": "Kaip naudotis Tolimoto Log",
+  "guide_lead": "Nuo įdiegimo iki įrašų saugumo. Skyrių apie duomenis perskaitykite prieš pradėdami rašyti.",
+  "toc_label": "Turinys"
 }

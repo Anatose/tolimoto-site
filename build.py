@@ -7,6 +7,7 @@ Texts live in src/i18n/<lang>.json (keys missing there fall back to English),
 privacy policy bodies in src/privacy/<lang>.html.
 """
 import hashlib
+import re
 import json
 import pathlib
 
@@ -27,7 +28,7 @@ LANGS = [
     {'code': 'lt', 'name': 'Lietuvių', 'og': 'lt_LT'},
     {'code': 'pl', 'name': 'Polski', 'og': 'pl_PL'},
 ]
-PAGES = ['index.html', 'privacy.html']
+PAGES = ['index.html', 'guide.html', 'privacy.html']
 # free "Таблица ТО" templates on Google Drive (shared: anyone with the link can view and copy)
 SHEETS = {
     'ru': '1vLzkDTCo8svfaQh1OFcyItb7-uFBU4DDBavEcUBHORM',
@@ -73,6 +74,10 @@ def main():
                        shots='ru' if code == 'ru' else 'en', sheets=SHEETS, sheet_lang=code if code in SHEETS else 'en')
             if page == 'privacy.html':
                 ctx['body'] = Markup((SRC / 'privacy' / f'{code}.html').read_text('utf-8'))
+            if page == 'guide.html':
+                g = (SRC / 'guide' / f'{code}.html').read_text('utf-8').replace('{{PRIVACY}}', link(code, 'privacy.html'))
+                ctx['body'] = Markup(g)
+                ctx['toc'] = re.findall(r'<section id="([a-z]+)"[^>]*>\s*<h2>(.*?)</h2>', g)
             html = env.get_template(page).render(**ctx)
             dest = OUT / ('' if code == 'en' else code) / page
             dest.parent.mkdir(parents=True, exist_ok=True)

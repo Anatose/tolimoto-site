@@ -1,0 +1,86 @@
+<section id="start">
+  <h2>Pierwsze kroki</h2>
+  <ol class="g-steps">
+    <li><b>Dodaj pojazd.</b> Nazwa, motocykl lub samochód, waluta i obecny przebieg. Zostaw włączony „Typowy zestaw” — aplikacja sama wypełni harmonogram serwisu (olej, filtry, łańcuch, płyn hamulcowy…), który możesz później zmienić.</li>
+    <li><b>Zapisz tankowanie.</b> Duży niebieski przycisk na pierwszym ekranie. Wpisz przebieg, litry i kwotę z paragonu (albo cenę za litr — druga wartość policzy się sama). Zaznaczaj „Pełny bak”, gdy tankujesz do pełna: spalanie liczy się między pełnymi bakami.</li>
+    <li><b>Kilka pojazdów?</b> Przesuń kartę u góry ekranu „Garaż”. Przycisk tankowania zawsze działa dla pokazanego pojazdu.</li>
+    <li><b>Tylko przebieg.</b> „Aktualizuj” na karcie zapisuje przebieg bez tankowania — przydatne przed serwisem.</li>
+  </ol>
+  <p class="g-note">Interfejs aplikacji jest na razie po angielsku i rosyjsku; nazwy przycisków poniżej są przetłumaczone.</p>
+</section>
+
+<section id="schedule">
+  <h2>Prace i harmonogram</h2>
+  <p>Każda praca to wpis: data, przebieg, kategoria (Serwis, Materiały eksploatacyjne, Naprawa, Akcesoria), co zrobiono, koszt części i robocizny, notatki i zdjęcia paragonów.</p>
+  <ul>
+    <li><b>Elementy i tagi.</b> Wymieniłeś olej — zaznacz element „Olej silnikowy” (tag <code>#engineoil</code>). Tak aplikacja wie, kiedy robiono to ostatnio.</li>
+    <li><b>Harmonogram.</b> Każdy element ma interwał w kilometrach i/lub dniach. Aplikacja pokazuje, ile zostało, i koloruje status: <span class="g-ok">OK</span>, <span class="g-soon">Wkrótce</span>, <span class="g-over">Po terminie</span>.</li>
+    <li><b>Własne elementy.</b> „+ Element” na ekranie harmonogramu: nazwa, tag, interwał i ściągawka z instrukcji obsługi (ilość oleju, momenty dokręcania).</li>
+  </ul>
+</section>
+
+<section id="log">
+  <h2>Dziennik i statystyki</h2>
+  <ul>
+    <li><b>Dziennik</b> — wszystkie wpisy na jednej liście: wyszukiwanie po tekście i numerach części, filtry prac, tankowań i wydatków, zakres dat. Każde tankowanie ma swoje spalanie: zielone, gdy wyraźnie poniżej średniej, czerwone — gdy znacznie powyżej.</li>
+    <li><b>Statystyki</b> — wydatki w podziale na lata (serwis i naprawy, akcesoria, paliwo, ubezpieczenie i inne), koszt kilometra, średnie spalanie i wykresy. Stuknij wiersz — zobaczysz, z czego się składa.</li>
+    <li><b>Wydatki</b> — ubezpieczenie, przegląd, podatek i wszystko inne, przyciskiem „+”.</li>
+  </ul>
+</section>
+
+<section id="import">
+  <h2>Przeprowadzka z Fuelly lub Fuelio</h2>
+  <ul>
+    <li><b>Fuelly:</b> na fuelly.com otwórz swój pojazd → eksport tankowań do CSV.</li>
+    <li><b>Fuelio:</b> zrób w Fuelio kopię zapasową CSV; jest tam osobny plik dla każdego pojazdu (<code>vehicle-…-sync.csv</code>). Możesz wybrać kilka plików naraz. Wydatki z Fuelio też się przenoszą: prace do dziennika, ubezpieczenie i podatki do wydatków.</li>
+    <li>W Tolimoto Log: Ustawienia → „Import z Fuelly lub Fuelio (CSV)”, potem wybierz, do którego pojazdu należy każdy plik. Mile i galony są przeliczane. Ponowny import tego samego pliku zastępuje wpisy zamiast je dublować.</li>
+  </ul>
+</section>
+
+<section id="google">
+  <h2>Arkusz Google i zdjęcia</h2>
+  <ul>
+    <li>Ustawienia → „Zaloguj się przez Google”. Aplikacja utworzy na Twoim Dysku Google folder „Tolimoto Log” z arkuszem i folderem „Receipts” na zdjęcia.</li>
+    <li>Synchronizacja działa sama: przy otwarciu aplikacji, po każdej zmianie i gdy wraca sieć. Wpisy możesz też edytować w arkuszu — zmiany wrócą do aplikacji.</li>
+    <li>Kartę „Summary” (podsumowanie: harmonogram, obecny przebieg, wydatki w podziale na lata) tworzy aplikacja. Dane edytuj na pozostałych kartach.</li>
+    <li>Aplikacja widzi tylko pliki, które sama utworzyła. Więcej w <a href="{{PRIVACY}}">polityce prywatności</a>.</li>
+  </ul>
+  <p class="g-note">W czasie bety logowanie przez Google jest otwarte tylko dla testerów. Pozostałym — kopie zapasowe (niżej).</p>
+</section>
+
+<section id="data" class="g-key">
+  <h2>Jak nie stracić danych</h2>
+  <p class="g-lead">Bez Google Twoje wpisy żyją <b>tylko w aplikacji na tym telefonie</b>. Zgubiony lub zepsuty telefon, usunięta aplikacja — wpisy przepadają. Wybierz jeden z dwóch sposobów i ustaw go dziś.</p>
+  <div class="g-two">
+    <div class="g-card">
+      <span class="mono">1 · polecamy</span>
+      <b>Arkusz Google</b>
+      <p>Wszystko samo kopiuje się na Twój Dysk Google. Nowy telefon: zainstaluj aplikację, zaloguj się na to samo konto — wszystko wróci.</p>
+    </div>
+    <div class="g-card">
+      <span class="mono">2 · bez Google</span>
+      <b>Plik kopii zapasowej</b>
+      <p>Ustawienia → „Bezpieczeństwo danych” → „Zapisz kopię zapasową”. Zapisz plik JSON <b>nie tylko na telefonie</b>: w iCloud Drive, na Dysku Google albo wyślij sobie mailem. Aplikacja przypomina raz w miesiącu i pokazuje datę ostatniej kopii.</p>
+    </div>
+  </div>
+  <h3>Nowy telefon</h3>
+  <ol class="g-steps">
+    <li>Zainstaluj aplikację (patrz wyżej) i otwórz ją z ikony.</li>
+    <li>Na ekranie „Gdzie trzymać Twoje wpisy?” wybierz „Połącz z Google” — albo „Przywróć z kopii zapasowej” i wskaż plik JSON.</li>
+  </ol>
+  <h3>Co usuwa dane</h3>
+  <ul>
+    <li>Usunięcie aplikacji z ekranu początkowego iPhone'a usuwa też jej wpisy. Najpierw zrób kopię.</li>
+    <li>Wyczyszczenie danych witryn w ustawieniach przeglądarki również może je skasować.</li>
+    <li>Wpisy w karcie Safari i w zainstalowanej aplikacji są osobne. Najpierw zainstaluj, potem zapisuj.</li>
+  </ul>
+</section>
+
+<section id="faq">
+  <h2>Pytania</h2>
+  <details><summary>Czy Tolimoto widzi moje wpisy?</summary><p>Nie. Tolimoto nie ma serwera: dane zostają na Twoim telefonie i, jeśli połączysz, na Twoim własnym Dysku Google.</p></details>
+  <details><summary>Czy działa bez internetu?</summary><p>Tak. Wszystko działa bez sieci; synchronizacja z Google nadrobi, gdy sieć wróci.</p></details>
+  <details><summary>Czy mogę prowadzić kilka motocykli i samochodów?</summary><p>Tak, ile chcesz. Każdy ma swój harmonogram, dziennik i statystyki.</p></details>
+  <details><summary>A Android?</summary><p>Aplikacja działa w Chrome na Androidzie i instaluje się z jego menu. Powstawała i była testowana najpierw na iPhonie — jeśli coś jest nie tak, <a href="mailto:contact@tolimoto.com">napisz do nas</a>.</p></details>
+  <details><summary>Gdzie zadać pytanie lub zgłosić błąd?</summary><p><a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a> lub <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>.</p></details>
+</section>

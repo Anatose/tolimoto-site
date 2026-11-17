@@ -114,5 +114,15 @@
   "shot_open": "Enlarge",
   "close": "Close",
   "prev": "Previous step",
-  "next": "Next step"
+  "next": "Next step",
+  "nav_guide": "How to use",
+  "hw1_t": "Install in a minute",
+  "hw1_d": "iPhone and Android, step by step with pictures.",
+  "hw2_t": "First steps",
+  "hw2_d": "Vehicle, fill-up, service schedule, import from Fuelly and Fuelio.",
+  "hw3_t": "How not to lose your data",
+  "hw3_d": "New phone, lost phone, deleted app — read this before you start.",
+  "guide_title": "How to use Tolimoto Log",
+  "guide_lead": "From installing to keeping your records safe. Read the part on data before you start logging.",
+  "toc_label": "Contents"
 }

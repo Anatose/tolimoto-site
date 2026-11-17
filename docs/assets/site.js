@@ -66,6 +66,16 @@
     window.addEventListener('resize', fit)
   }
 
+  // guide: highlight the section being read in the table of contents
+  var toc = [].slice.call(document.querySelectorAll('.g-toc a'))
+  if (toc.length && 'IntersectionObserver' in window) {
+    var secs = toc.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)) }).filter(Boolean)
+    var tio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) toc.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id) }) })
+    }, { rootMargin: '-30% 0px -60% 0px' })
+    secs.forEach(function (s) { tio.observe(s) })
+  }
+
   var bar = document.getElementById('bar')
   function onScroll() { if (bar && !bar.classList.contains('fixed-solid')) bar.classList.toggle('solid', window.scrollY > 20 || document.body.classList.contains('doc-page')) }
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll()

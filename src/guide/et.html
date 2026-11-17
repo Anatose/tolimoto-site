@@ -1,0 +1,86 @@
+<section id="start">
+  <h2>Esimesed sammud</h2>
+  <ol class="g-steps">
+    <li><b>Lisa sõiduk.</b> Nimi, mootorratas või auto, valuuta ja praegune läbisõit. Jäta sisse „Tüüpiline komplekt” — rakendus täidab hooldusgraafiku ise (õli, filtrid, kett, pidurivedelik…), seda saab hiljem muuta.</li>
+    <li><b>Kirjuta tankimine üles.</b> Suur sinine nupp esimesel ekraanil. Sisesta läbisõit, liitrid ja tšeki summa (või liitri hind — teine arvutatakse ise). Märgi „Täis paak”, kui tangid ääreni: kütusekulu arvestatakse täis paakide vahel.</li>
+    <li><b>Mitu sõidukit?</b> Libista kaarti „Garaaž” ekraani ülaosas. Tankimise nupp töötab alati näidatud sõiduki jaoks.</li>
+    <li><b>Ainult läbisõit.</b> „Uuenda” sõiduki kaardil salvestab läbisõidu ilma tankimiseta — mugav enne hooldust.</li>
+  </ol>
+  <p class="g-note">Rakenduse liides on praegu inglise ja vene keeles; nuppude nimed allpool on tõlgitud.</p>
+</section>
+
+<section id="schedule">
+  <h2>Tööd ja hooldusgraafik</h2>
+  <p>Iga töö on kirje: kuupäev, läbisõit, kategooria (Hooldus, Kulumaterjalid, Remont, Tarvikud), mida tehti, varuosade ja töö maksumus, märkmed ja tšekkide fotod.</p>
+  <ul>
+    <li><b>Sõlmed ja sildid.</b> Vahetasid õli — märgi sõlm „Mootoriõli” (silt <code>#engineoil</code>). Nii teab rakendus, millal seda viimati tehti.</li>
+    <li><b>Hooldusgraafik.</b> Igal sõlmel on intervall kilomeetrites ja/või päevades. Rakendus näitab, palju on jäänud, ja värvib oleku: <span class="g-ok">Korras</span>, <span class="g-soon">Varsti</span>, <span class="g-over">Üle aja</span>.</li>
+    <li><b>Oma sõlmed.</b> „+ Sõlm” hooldusgraafiku ekraanil: nimi, silt, intervall ja meelespea kasutusjuhendist (õli kogus, pingutusmomendid).</li>
+  </ul>
+</section>
+
+<section id="log">
+  <h2>Päevik ja statistika</h2>
+  <ul>
+    <li><b>Päevik</b> — kõik kirjed ühes loendis: otsing teksti ja tootekoodide järgi, filtrid tööde, tankimiste ja kulude kaupa, kuupäevavahemik. Igal tankimisel on oma kütusekulu: roheline, kui see on keskmisest märgatavalt väiksem, punane, kui palju suurem.</li>
+    <li><b>Statistika</b> — kulud aastate kaupa (hooldus ja remont, tarvikud, kütus, kindlustus ja muu), kilomeetri hind, keskmine kütusekulu ja graafikud. Puuduta rida — näed, millest see koosneb.</li>
+    <li><b>Kulud</b> — kindlustus, ülevaatus, maks ja kõik muu, nupu „+” kaudu.</li>
+  </ul>
+</section>
+
+<section id="import">
+  <h2>Üleminek Fuellyst või Fueliost</h2>
+  <ul>
+    <li><b>Fuelly:</b> ava fuelly.com-is oma sõiduk → ekspordi tankimised CSV-failina.</li>
+    <li><b>Fuelio:</b> tee Fuelios CSV-varukoopia; seal on iga sõiduki jaoks eraldi fail (<code>vehicle-…-sync.csv</code>). Korraga saab valida mitu faili. Ka Fuelio kulud tulevad kaasa: tööd päevikusse, kindlustus ja maksud kuludesse.</li>
+    <li>Tolimoto Logis: Seaded → „Import Fuellyst või Fueliost (CSV)”, seejärel vali, millise sõiduki juurde iga fail läheb. Miilid ja gallonid arvutatakse ümber. Sama faili uuesti importimine asendab kirjed, mitte ei dubleeri neid.</li>
+  </ul>
+</section>
+
+<section id="google">
+  <h2>Google'i tabel ja fotod</h2>
+  <ul>
+    <li>Seaded → „Logi sisse Google'iga”. Rakendus loob sinu Google Drive'i kausta „Tolimoto Log” koos tabeli ja fotode kaustaga „Receipts”.</li>
+    <li>Sünkroonimine käib ise: rakenduse avamisel, pärast iga muudatust ja kui võrk taastub. Kirjeid saab muuta ka tabelis — muudatused jõuavad rakendusse tagasi.</li>
+    <li>Vahelehe „Summary” (kokkuvõte: hooldusgraafik, praegune läbisõit, kulud aastate kaupa) koostab rakendus. Andmeid muuda teistel vahelehtedel.</li>
+    <li>Rakendus näeb ainult faile, mille ta ise lõi. Lähemalt <a href="{{PRIVACY}}">privaatsuspoliitikas</a>.</li>
+  </ul>
+  <p class="g-note">Beeta ajal on Google'iga sisselogimine avatud ainult testijatele. Teistele — varukoopiad (allpool).</p>
+</section>
+
+<section id="data" class="g-key">
+  <h2>Kuidas andmeid mitte kaotada</h2>
+  <p class="g-lead">Ilma Google'ita on sinu kirjed <b>ainult rakenduses selles telefonis</b>. Telefon kadus või läks katki, rakendus kustutati — kirjed on läinud. Vali üks kahest viisist ja seadista see täna.</p>
+  <div class="g-two">
+    <div class="g-card">
+      <span class="mono">1 · soovitame</span>
+      <b>Google'i tabel</b>
+      <p>Kõik kopeeritakse ise sinu Google Drive'i. Uus telefon: paigalda rakendus, logi sisse sama kontoga — kõik tuleb tagasi.</p>
+    </div>
+    <div class="g-card">
+      <span class="mono">2 · ilma Google'ita</span>
+      <b>Varukoopia fail</b>
+      <p>Seaded → „Andmete turvalisus” → „Salvesta varukoopia”. Salvesta JSON-fail <b>mujale kui telefoni</b>: iCloud Drive'i, Google Drive'i või saada endale e-postiga. Rakendus tuletab kord kuus meelde ja näitab viimase koopia kuupäeva.</p>
+    </div>
+  </div>
+  <h3>Uus telefon</h3>
+  <ol class="g-steps">
+    <li>Paigalda rakendus (vt eespool) ja ava see ikoonilt.</li>
+    <li>Ekraanil „Kus su kirjeid hoida?” vali „Ühenda Google” — või „Taasta varukoopiast” ja vali JSON-fail.</li>
+  </ol>
+  <h3>Mis andmed kustutab</h3>
+  <ul>
+    <li>Rakenduse eemaldamine iPhone'i avakuvalt kustutab ka selle kirjed. Tee enne koopia.</li>
+    <li>Saitide andmete kustutamine brauseri seadetes võib need samuti kustutada.</li>
+    <li>Safari vahelehel ja paigaldatud rakenduses on kirjed eraldi. Kõigepealt paigalda, siis kirjuta.</li>
+  </ul>
+</section>
+
+<section id="faq">
+  <h2>Küsimused</h2>
+  <details><summary>Kas Tolimoto näeb minu kirjeid?</summary><p>Ei. Tolimotol pole serverit: andmed jäävad sinu telefoni ja ühendamisel sinu enda Google Drive'i.</p></details>
+  <details><summary>Kas töötab ilma internetita?</summary><p>Jah. Kõik töötab ilma võrguta; Google'iga sünkroonimine jõuab järele, kui võrk taastub.</p></details>
+  <details><summary>Kas saab pidada mitut mootorratast ja autot?</summary><p>Jah, nii palju kui soovid. Igaühel on oma hooldusgraafik, päevik ja statistika.</p></details>
+  <details><summary>Aga Android?</summary><p>Rakendus töötab Androidis Chrome'is ja paigaldub selle menüüst. See on tehtud ja testitud eelkõige iPhone'i jaoks — kui midagi on valesti, <a href="mailto:contact@tolimoto.com">kirjuta meile</a>.</p></details>
+  <details><summary>Kus küsida või veast teatada?</summary><p><a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a> või <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>.</p></details>
+</section>

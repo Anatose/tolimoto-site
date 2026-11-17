@@ -1,0 +1,85 @@
+<section id="start">
+  <h2>First steps</h2>
+  <ol class="g-steps">
+    <li><b>Add a vehicle.</b> Name, motorcycle or car, currency and the current odometer reading. Leave “Typical set” on and the app fills in a maintenance schedule (oil, filters, chain, brake fluid…) that you can change later.</li>
+    <li><b>Log a fill-up.</b> The big blue button on the first screen. Enter the odometer, litres and the receipt total (or the price per litre — the other one is calculated). Tick “Full tank” when you fill to the top: consumption is counted between full tanks.</li>
+    <li><b>Several vehicles?</b> Swipe the card at the top of the Garage screen. The fill-up button always works for the vehicle shown.</li>
+    <li><b>Odometer only.</b> “Update” on the vehicle card records the mileage without a fill-up — handy before a service.</li>
+  </ol>
+</section>
+
+<section id="schedule">
+  <h2>Service work and the schedule</h2>
+  <p>Every service job is a record: date, odometer, category (Service, Consumables, Repair, Accessories), what was done, parts and labour costs, notes and photos of receipts.</p>
+  <ul>
+    <li><b>Items and tags.</b> When you change the oil, mark the item “Engine oil” (tag <code>#engineoil</code>). That is how the app knows when it was done last.</li>
+    <li><b>Schedule.</b> Each item has an interval in kilometres and/or days. The app shows what is left and colours it: <span class="g-ok">OK</span>, <span class="g-soon">Soon</span>, <span class="g-over">Overdue</span>.</li>
+    <li><b>Your own items.</b> “+ Item” on the Schedule screen: a name, a tag, an interval and a note from your owner’s manual (oil volume, torque settings).</li>
+  </ul>
+</section>
+
+<section id="log">
+  <h2>Log and statistics</h2>
+  <ul>
+    <li><b>Log</b> — all records in one list: search by text and part numbers, filters for jobs, fill-ups and expenses, date range. Each fill-up shows its consumption: green when it is noticeably below your average, red when well above.</li>
+    <li><b>Statistics</b> — spending per year (service, accessories, fuel, insurance and other), cost per kilometre, average consumption and charts. Tap a line to see what it is made of.</li>
+    <li><b>Expenses</b> — insurance, inspection, tax and anything else, via the “+” button.</li>
+  </ul>
+</section>
+
+<section id="import">
+  <h2>Moving from Fuelly or Fuelio</h2>
+  <ul>
+    <li><b>Fuelly:</b> on fuelly.com open your vehicle → export fill-ups as CSV.</li>
+    <li><b>Fuelio:</b> make a CSV backup in Fuelio; it keeps one file per vehicle (<code>vehicle-…-sync.csv</code>). You can pick several files at once. Fuelio costs come along too: service jobs go to the log, insurance and taxes to expenses.</li>
+    <li>In Tolimoto Log: Settings → “Import from Fuelly or Fuelio (CSV)”, then choose which vehicle each file goes to. Miles and gallons are converted. Importing the same file again replaces records instead of duplicating them.</li>
+  </ul>
+</section>
+
+<section id="google">
+  <h2>Google Sheets and photos</h2>
+  <ul>
+    <li>Settings → “Sign in with Google”. The app creates a “Tolimoto Log” folder in your Google Drive with a spreadsheet and a “Receipts” folder for photos.</li>
+    <li>Sync runs by itself: when you open the app, after each change, and when the network comes back. You can also edit records in the spreadsheet — the changes come back to the app.</li>
+    <li>The “Summary” tab is built by the app (schedule, current odometer, spending by year). Edit the data on the other tabs.</li>
+    <li>The app can only see the files it created. More in the <a href="{{PRIVACY}}">privacy policy</a>.</li>
+  </ul>
+  <p class="g-note">During the beta, Google sign-in is open to beta testers only. Everyone else: use backups (below).</p>
+</section>
+
+<section id="data" class="g-key">
+  <h2>How not to lose your data</h2>
+  <p class="g-lead">Without Google, your records live <b>only in the app on this phone</b>. If the phone is lost or broken, or the app is deleted, the records are gone. Choose one of the two ways and set it up today.</p>
+  <div class="g-two">
+    <div class="g-card">
+      <span class="mono">1 · recommended</span>
+      <b>Google spreadsheet</b>
+      <p>Everything is copied to your Google Drive automatically. New phone: install the app, sign in with the same account — everything comes back.</p>
+    </div>
+    <div class="g-card">
+      <span class="mono">2 · without Google</span>
+      <b>Backup file</b>
+      <p>Settings → “Keeping your data safe” → “Save a backup”. Save the JSON file <b>off the phone</b>: iCloud Drive, Google Drive or email it to yourself. The app reminds you once a month and shows the date of the last backup.</p>
+    </div>
+  </div>
+  <h3>New phone</h3>
+  <ol class="g-steps">
+    <li>Install the app (see above) and open it from its icon.</li>
+    <li>On the “Where should your records live?” screen choose “Connect Google” — or “Restore from a backup” and pick the JSON file.</li>
+  </ol>
+  <h3>What deletes the data</h3>
+  <ul>
+    <li>Removing the app from the iPhone Home Screen deletes its records too. Make a backup first.</li>
+    <li>Clearing website data in the browser settings may wipe them as well.</li>
+    <li>Records entered in a Safari tab and in the installed app are separate. Install first, then log.</li>
+  </ul>
+</section>
+
+<section id="faq">
+  <h2>Questions</h2>
+  <details><summary>Does Tolimoto see my records?</summary><p>No. There is no Tolimoto server: data stays on your phone and, if you connect it, in your own Google Drive.</p></details>
+  <details><summary>Does it work without internet?</summary><p>Yes. Everything works offline; Google sync catches up when the network is back.</p></details>
+  <details><summary>Can I keep several motorcycles and cars?</summary><p>Yes, as many as you like. Each has its own schedule, log and statistics.</p></details>
+  <details><summary>Android?</summary><p>The app works in Chrome on Android and installs from its menu. It was built and tested on iPhone first — if something looks off, <a href="mailto:contact@tolimoto.com">write to us</a>.</p></details>
+  <details><summary>Where do I ask a question or report a bug?</summary><p><a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a> or <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>.</p></details>
+</section>

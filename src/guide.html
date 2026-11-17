@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% import '_install.html' as ins with context %}
+{% block title %}{{ t.guide_title }}{% endblock %}
+{% block desc %}{{ t.guide_lead }}{% endblock %}
+{% block barclass %} solid fixed-solid{% endblock %}
+{% block main %}
+<main class="guide" id="main">
+  <div class="wrap">
+    <header class="g-head">
+      <h1>{{ t.guide_title }}</h1>
+      <p class="lead">{{ t.guide_lead }}</p>
+      <div class="btns"><a class="btn blue" href="https://app.tolimoto.com/">{{ t.btn_open }} <span aria-hidden="true">→</span></a></div>
+    </header>
+    <div class="g-grid">
+      <nav class="g-toc" aria-label="{{ t.toc_label }}">
+        <span class="mono">{{ t.toc_label }}</span>
+        <a href="#install">{{ t.inst_title }}</a>
+        {% for id, title in toc %}<a href="#{{ id }}"{% if id == 'data' %} class="key"{% endif %}>{{ title }}</a>
+        {% endfor %}
+      </nav>
+      <div class="g-body">
+        <section id="install-wrap">{{ ins.install_block() }}</section>
+        {{ body }}
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

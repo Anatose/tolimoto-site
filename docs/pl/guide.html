@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jak używać Tolimoto Log</title>
+<meta name="description" content="Od instalacji po bezpieczeństwo wpisów. Część o danych przeczytaj, zanim zaczniesz zapisywać.">
+<meta name="theme-color" content="#0c0d0f">
+<link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png?v=2">
+<link rel="canonical" href="https://tolimoto.com/pl/guide.html">
+<link rel="alternate" hreflang="en" href="https://tolimoto.com/guide.html">
+<link rel="alternate" hreflang="ru" href="https://tolimoto.com/ru/guide.html">
+<link rel="alternate" hreflang="uk" href="https://tolimoto.com/uk/guide.html">
+<link rel="alternate" hreflang="et" href="https://tolimoto.com/et/guide.html">
+<link rel="alternate" hreflang="lv" href="https://tolimoto.com/lv/guide.html">
+<link rel="alternate" hreflang="lt" href="https://tolimoto.com/lt/guide.html">
+<link rel="alternate" hreflang="pl" href="https://tolimoto.com/pl/guide.html">
+<link rel="alternate" hreflang="x-default" href="https://tolimoto.com/guide.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tolimoto.com/pl/guide.html">
+<meta property="og:title" content="Jak używać Tolimoto Log">
+<meta property="og:description" content="Od instalacji po bezpieczeństwo wpisów. Część o danych przeczytaj, zanim zaczniesz zapisywać.">
+<meta property="og:image" content="https://tolimoto.com/assets/og.png">
+<meta property="og:locale" content="pl_PL">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../assets/fonts/dela-gothic-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css?v=dd5b8c49">
+<script>document.documentElement.classList.add('js')</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Przejdź do treści</a>
+<header class="bar solid fixed-solid" id="bar">
+  <div class="wrap">
+    <a class="brand" href="../pl/#top" aria-label="Tolimoto"><img src="../assets/logo.svg" alt="Tolimoto" width="118" height="44"></a>
+    <nav aria-label="Sekcje">
+      <a href="../pl/#channel">Kanał</a>
+      <a href="../pl/#app">Aplikacja</a>
+      <a href="../pl/#sheet">Arkusz serwisowy</a>
+      <a href="../pl/guide.html" aria-current="page">Jak używać</a>
+      <a href="../pl/#contact">Kontakt</a>
+    </nav>
+    <details class="langs">
+      <summary aria-label="Język"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>PL</summary>
+      <ul>
+        <li><a href="../guide.html" hreflang="en" lang="en" data-lang="en"><b>EN</b>English</a></li>
+        <li><a href="../ru/guide.html" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b>Русский</a></li>
+        <li><a href="../uk/guide.html" hreflang="uk" lang="uk" data-lang="uk"><b>UK</b>Українська</a></li>
+        <li><a href="../et/guide.html" hreflang="et" lang="et" data-lang="et"><b>ET</b>Eesti</a></li>
+        <li><a href="../lv/guide.html" hreflang="lv" lang="lv" data-lang="lv"><b>LV</b>Latviešu</a></li>
+        <li><a href="../lt/guide.html" hreflang="lt" lang="lt" data-lang="lt"><b>LT</b>Lietuvių</a></li>
+        <li><a href="../pl/guide.html" hreflang="pl" lang="pl" data-lang="pl" aria-current="true"><b>PL</b>Polski</a></li>
+        
+      </ul>
+    </details>
+  </div>
+</header>
+
+<main class="guide" id="main">
+  <div class="wrap">
+    <header class="g-head">
+      <h1>Jak używać Tolimoto Log</h1>
+      <p class="lead">Od instalacji po bezpieczeństwo wpisów. Część o danych przeczytaj, zanim zaczniesz zapisywać.</p>
+      <div class="btns"><a class="btn blue" href="https://app.tolimoto.com/">Otwórz aplikację <span aria-hidden="true">→</span></a></div>
+    </header>
+    <div class="g-grid">
+      <nav class="g-toc" aria-label="Spis treści">
+        <span class="mono">Spis treści</span>
+        <a href="#install">Jak zainstalować</a>
+        <a href="#start">Pierwsze kroki</a>
+        <a href="#schedule">Prace i harmonogram</a>
+        <a href="#log">Dziennik i statystyki</a>
+        <a href="#import">Przeprowadzka z Fuelly lub Fuelio</a>
+        <a href="#google">Arkusz Google i zdjęcia</a>
+        <a href="#data" class="key">Jak nie stracić danych</a>
+        <a href="#faq">Pytania</a>
+        
+      </nav>
+      <div class="g-body">
+        <section id="install-wrap">
+      <!-- install guide -->
+      <div class="install" id="install">
+        <h3 class="rv">Jak zainstalować</h3>
+        <p class="lead rv">Tolimoto Log to aplikacja internetowa: nie trzeba niczego pobierać ze sklepu. Dodaj ją do ekranu początkowego, a otworzy się na pełnym ekranie jak zwykła aplikacja i będzie działać bez sieci.</p>
+        <div class="os-tabs rv" role="tablist" aria-label="Jak zainstalować">
+          <button type="button" role="tab" id="tab-ios" aria-controls="steps-ios" aria-selected="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1.1.1 2.1-.5 2.7-1.2z"/></svg>iPhone</button>
+          <button type="button" role="tab" id="tab-and" aria-controls="steps-and" aria-selected="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.5 9h9a1 1 0 0 1 1 1v7a1.5 1.5 0 0 1-1.5 1.5H15V21a1 1 0 0 1-2 0v-2.5h-2V21a1 1 0 0 1-2 0v-2.5H8A1.5 1.5 0 0 1 6.5 17v-7a1 1 0 0 1 1-1zm-3 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zm15 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zM8.2 3.3l1 1.6A6 6 0 0 1 12 4.3c1 0 2 .2 2.8.6l1-1.6a.4.4 0 0 1 .7.4l-1 1.5A5.2 5.2 0 0 1 17.5 8h-11a5.2 5.2 0 0 1 2-2.8l-1-1.5a.4.4 0 0 1 .7-.4zM10 6.2a.6.6 0 1 0 0 1.2.6.6 0 0 0 0-1.2zm4 0a.6.6 0 1 0 0 1.2.6.6 0 0 0 0-1.2z"/></svg>Android</button>
+        </div>
+        <ol class="steps" id="steps-ios" role="tabpanel" aria-labelledby="tab-ios">
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Otwórz aplikację w Safari"><div class="mock ios-open" aria-hidden="true">
+    <img class="page" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="sf-bar"><span class="sf-url">app.tolimoto.com</span><div class="sf-tools"><i class="ic back"></i><i class="ic fwd"></i><i class="ic share"></i><i class="ic book"></i><i class="ic tabs"></i></div></div>
+</div></button><div class="st-txt"><b>1. Otwórz aplikację w Safari</b><span>Wejdź na app.tolimoto.com w Safari — standardowej przeglądarce iPhone&#39;a.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Stuknij „Udostępnij”"><div class="mock ios-share" aria-hidden="true">
+    <img class="page" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="sf-bar"><span class="sf-url">app.tolimoto.com</span><div class="sf-tools"><i class="ic back"></i><i class="ic fwd"></i><i class="ic share hit"></i><i class="ic book"></i><i class="ic tabs"></i></div></div>
+</div></button><div class="st-txt"><b>2. Stuknij „Udostępnij”</b><span>Kwadrat ze strzałką w górę na pasku u dołu ekranu.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Wybierz „Do ekranu początkowego”"><div class="mock ios-sheet" aria-hidden="true">
+    <img class="page dim" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="sheet-ui"><div class="sh-head"><b class="appic"></b><span>Tolimoto Log<small>app.tolimoto.com</small></span></div>
+      <div class="sh-row">Kopiuj</div><div class="sh-row">Dodaj do listy Czytelnia</div><div class="sh-row">Dodaj zakładkę</div><div class="sh-row hit">Do ekranu początkowego<i class="ic plus"></i></div></div>
+</div></button><div class="st-txt"><b>3. Wybierz „Do ekranu początkowego”</b><span>Jeśli nie widać tej opcji od razu, przewiń listę w dół.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Stuknij „Dodaj”"><div class="mock ios-add" aria-hidden="true">
+    <div class="add-ui"><div class="add-top"><span>Anuluj</span><b class="hit">Dodaj</b></div>
+      <div class="add-card"><b class="appic"></b><div><span>Tolimoto Log</span><small>https://app.tolimoto.com</small></div></div></div>
+</div></button><div class="st-txt"><b>4. Stuknij „Dodaj”</b><span>Nazwę Tolimoto Log możesz zostawić albo skrócić.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Otwieraj z ekranu początkowego"><div class="mock ios-home" aria-hidden="true">
+    <div class="home-ui"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><span class="me hit"><b class="appic"></b><small>Tolimoto</small></span><i></i><i></i><i></i><i></i></div>
+</div></button><div class="st-txt"><b>5. Otwieraj z ekranu początkowego</b><span>Od teraz uruchamiaj aplikację z ikony, a nie z Safari.</span></div></li>
+          
+        </ol>
+        <ol class="steps" id="steps-and" role="tabpanel" aria-labelledby="tab-and" hidden>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Otwórz aplikację w Chrome"><div class="mock and-open" aria-hidden="true">
+    <div class="cr-bar"><span class="cr-url">app.tolimoto.com</span><i class="ic dots"></i></div>
+    <img class="page" src="../assets/img/en-home.webp" alt="" loading="lazy">
+</div></button><div class="st-txt"><b>1. Otwórz aplikację w Chrome</b><span>Wejdź na app.tolimoto.com w Chrome.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Otwórz menu"><div class="mock and-menu" aria-hidden="true">
+    <div class="cr-bar"><span class="cr-url">app.tolimoto.com</span><i class="ic dots hit"></i></div>
+    <img class="page" src="../assets/img/en-home.webp" alt="" loading="lazy">
+</div></button><div class="st-txt"><b>2. Otwórz menu</b><span>Trzy kropki w prawym górnym rogu.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Wybierz „Zainstaluj aplikację”"><div class="mock and-list" aria-hidden="true">
+    <div class="cr-bar"><span class="cr-url">app.tolimoto.com</span><i class="ic dots"></i></div>
+    <img class="page dim" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="cr-menu"><div>Nowa karta</div><div>Historia</div><div>Dodaj zakładkę</div><div class="hit">Zainstaluj aplikację</div></div>
+</div></button><div class="st-txt"><b>3. Wybierz „Zainstaluj aplikację”</b><span>Na niektórych telefonach opcja nazywa się „Dodaj do ekranu głównego”.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Potwierdź"><div class="mock and-dialog" aria-hidden="true">
+    <img class="page dim" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="cr-dialog"><b>Zainstalować aplikację?</b><div class="add-card"><b class="appic"></b><div><span>Tolimoto Log</span><small>app.tolimoto.com</small></div></div><div class="cr-btns"><span>Anuluj</span><span class="hit">Zainstaluj</span></div></div>
+</div></button><div class="st-txt"><b>4. Potwierdź</b><span>Stuknij „Zainstaluj”. Chrome może też sam to zaproponować u dołu ekranu.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Powiększ: Otwieraj z ekranu głównego"><div class="mock and-home" aria-hidden="true">
+    <div class="home-ui droid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><span class="me hit"><b class="appic"></b><small>Tolimoto</small></span><i></i><i></i><i></i><i></i></div>
+</div></button><div class="st-txt"><b>5. Otwieraj z ekranu głównego</b><span>Ikona pojawi się na ekranie głównym i na liście aplikacji.</span></div></li>
+          
+        </ol>
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Jak zainstalować" hidden>
+          <button type="button" class="lb-close" aria-label="Zamknij">×</button>
+          <button type="button" class="lb-nav lb-prev" aria-label="Poprzedni krok">‹</button>
+          <figure><div class="lb-stage"></div><figcaption></figcaption></figure>
+          <button type="button" class="lb-nav lb-next" aria-label="Następny krok">›</button>
+        </div>
+        <div class="inst-notes rv">
+          <p class="warn"><b>Najpierw zainstaluj, potem zapisuj.</b> Na iPhonie zainstalowana aplikacja przechowuje dane osobno od Safari. Dodaj ją do ekranu początkowego, zanim zaczniesz wpisywać dane — albo przenieś wpisy kopią zapasową JSON z ustawień.</p>
+          <p class="note">Na Androidzie aplikacja działa w Chrome. Powstawała i była testowana najpierw na iPhonie, więc jeśli coś wygląda nie tak — napisz do nas. Rysunki są uproszczone; nazwy pozycji menu mogą się nieco różnić w zależności od wersji systemu.</p>
+        </div>
+      </div>
+</section>
+        <section id="start">
+  <h2>Pierwsze kroki</h2>
+  <ol class="g-steps">
+    <li><b>Dodaj pojazd.</b> Nazwa, motocykl lub samochód, waluta i obecny przebieg. Zostaw włączony „Typowy zestaw” — aplikacja sama wypełni harmonogram serwisu (olej, filtry, łańcuch, płyn hamulcowy…), który możesz później zmienić.</li>
+    <li><b>Zapisz tankowanie.</b> Duży niebieski przycisk na pierwszym ekranie. Wpisz przebieg, litry i kwotę z paragonu (albo cenę za litr — druga wartość policzy się sama). Zaznaczaj „Pełny bak”, gdy tankujesz do pełna: spalanie liczy się między pełnymi bakami.</li>
+    <li><b>Kilka pojazdów?</b> Przesuń kartę u góry ekranu „Garaż”. Przycisk tankowania zawsze działa dla pokazanego pojazdu.</li>
+    <li><b>Tylko przebieg.</b> „Aktualizuj” na karcie zapisuje przebieg bez tankowania — przydatne przed serwisem.</li>
+  </ol>
+  <p class="g-note">Interfejs aplikacji jest na razie po angielsku i rosyjsku; nazwy przycisków poniżej są przetłumaczone.</p>
+</section>
+
+<section id="schedule">
+  <h2>Prace i harmonogram</h2>
+  <p>Każda praca to wpis: data, przebieg, kategoria (Serwis, Materiały eksploatacyjne, Naprawa, Akcesoria), co zrobiono, koszt części i robocizny, notatki i zdjęcia paragonów.</p>
+  <ul>
+    <li><b>Elementy i tagi.</b> Wymieniłeś olej — zaznacz element „Olej silnikowy” (tag <code>#engineoil</code>). Tak aplikacja wie, kiedy robiono to ostatnio.</li>
+    <li><b>Harmonogram.</b> Każdy element ma interwał w kilometrach i/lub dniach. Aplikacja pokazuje, ile zostało, i koloruje status: <span class="g-ok">OK</span>, <span class="g-soon">Wkrótce</span>, <span class="g-over">Po terminie</span>.</li>
+    <li><b>Własne elementy.</b> „+ Element” na ekranie harmonogramu: nazwa, tag, interwał i ściągawka z instrukcji obsługi (ilość oleju, momenty dokręcania).</li>
+  </ul>
+</section>
+
+<section id="log">
+  <h2>Dziennik i statystyki</h2>
+  <ul>
+    <li><b>Dziennik</b> — wszystkie wpisy na jednej liście: wyszukiwanie po tekście i numerach części, filtry prac, tankowań i wydatków, zakres dat. Każde tankowanie ma swoje spalanie: zielone, gdy wyraźnie poniżej średniej, czerwone — gdy znacznie powyżej.</li>
+    <li><b>Statystyki</b> — wydatki w podziale na lata (serwis i naprawy, akcesoria, paliwo, ubezpieczenie i inne), koszt kilometra, średnie spalanie i wykresy. Stuknij wiersz — zobaczysz, z czego się składa.</li>
+    <li><b>Wydatki</b> — ubezpieczenie, przegląd, podatek i wszystko inne, przyciskiem „+”.</li>
+  </ul>
+</section>
+
+<section id="import">
+  <h2>Przeprowadzka z Fuelly lub Fuelio</h2>
+  <ul>
+    <li><b>Fuelly:</b> na fuelly.com otwórz swój pojazd → eksport tankowań do CSV.</li>
+    <li><b>Fuelio:</b> zrób w Fuelio kopię zapasową CSV; jest tam osobny plik dla każdego pojazdu (<code>vehicle-…-sync.csv</code>). Możesz wybrać kilka plików naraz. Wydatki z Fuelio też się przenoszą: prace do dziennika, ubezpieczenie i podatki do wydatków.</li>
+    <li>W Tolimoto Log: Ustawienia → „Import z Fuelly lub Fuelio (CSV)”, potem wybierz, do którego pojazdu należy każdy plik. Mile i galony są przeliczane. Ponowny import tego samego pliku zastępuje wpisy zamiast je dublować.</li>
+  </ul>
+</section>
+
+<section id="google">
+  <h2>Arkusz Google i zdjęcia</h2>
+  <ul>
+    <li>Ustawienia → „Zaloguj się przez Google”. Aplikacja utworzy na Twoim Dysku Google folder „Tolimoto Log” z arkuszem i folderem „Receipts” na zdjęcia.</li>
+    <li>Synchronizacja działa sama: przy otwarciu aplikacji, po każdej zmianie i gdy wraca sieć. Wpisy możesz też edytować w arkuszu — zmiany wrócą do aplikacji.</li>
+    <li>Kartę „Summary” (podsumowanie: harmonogram, obecny przebieg, wydatki w podziale na lata) tworzy aplikacja. Dane edytuj na pozostałych kartach.</li>
+    <li>Aplikacja widzi tylko pliki, które sama utworzyła. Więcej w <a href="../pl/privacy.html">polityce prywatności</a>.</li>
+  </ul>
+  <p class="g-note">W czasie bety logowanie przez Google jest otwarte tylko dla testerów. Pozostałym — kopie zapasowe (niżej).</p>
+</section>
+
+<section id="data" class="g-key">
+  <h2>Jak nie stracić danych</h2>
+  <p class="g-lead">Bez Google Twoje wpisy żyją <b>tylko w aplikacji na tym telefonie</b>. Zgubiony lub zepsuty telefon, usunięta aplikacja — wpisy przepadają. Wybierz jeden z dwóch sposobów i ustaw go dziś.</p>
+  <div class="g-two">
+    <div class="g-card">
+      <span class="mono">1 · polecamy</span>
+      <b>Arkusz Google</b>
+      <p>Wszystko samo kopiuje się na Twój Dysk Google. Nowy telefon: zainstaluj aplikację, zaloguj się na to samo konto — wszystko wróci.</p>
+    </div>
+    <div class="g-card">
+      <span class="mono">2 · bez Google</span>
+      <b>Plik kopii zapasowej</b>
+      <p>Ustawienia → „Bezpieczeństwo danych” → „Zapisz kopię zapasową”. Zapisz plik JSON <b>nie tylko na telefonie</b>: w iCloud Drive, na Dysku Google albo wyślij sobie mailem. Aplikacja przypomina raz w miesiącu i pokazuje datę ostatniej kopii.</p>
+    </div>
+  </div>
+  <h3>Nowy telefon</h3>
+  <ol class="g-steps">
+    <li>Zainstaluj aplikację (patrz wyżej) i otwórz ją z ikony.</li>
+    <li>Na ekranie „Gdzie trzymać Twoje wpisy?” wybierz „Połącz z Google” — albo „Przywróć z kopii zapasowej” i wskaż plik JSON.</li>
+  </ol>
+  <h3>Co usuwa dane</h3>
+  <ul>
+    <li>Usunięcie aplikacji z ekranu początkowego iPhone'a usuwa też jej wpisy. Najpierw zrób kopię.</li>
+    <li>Wyczyszczenie danych witryn w ustawieniach przeglądarki również może je skasować.</li>
+    <li>Wpisy w karcie Safari i w zainstalowanej aplikacji są osobne. Najpierw zainstaluj, potem zapisuj.</li>
+  </ul>
+</section>
+
+<section id="faq">
+  <h2>Pytania</h2>
+  <details><summary>Czy Tolimoto widzi moje wpisy?</summary><p>Nie. Tolimoto nie ma serwera: dane zostają na Twoim telefonie i, jeśli połączysz, na Twoim własnym Dysku Google.</p></details>
+  <details><summary>Czy działa bez internetu?</summary><p>Tak. Wszystko działa bez sieci; synchronizacja z Google nadrobi, gdy sieć wróci.</p></details>
+  <details><summary>Czy mogę prowadzić kilka motocykli i samochodów?</summary><p>Tak, ile chcesz. Każdy ma swój harmonogram, dziennik i statystyki.</p></details>
+  <details><summary>A Android?</summary><p>Aplikacja działa w Chrome na Androidzie i instaluje się z jego menu. Powstawała i była testowana najpierw na iPhonie — jeśli coś jest nie tak, <a href="mailto:contact@tolimoto.com">napisz do nas</a>.</p></details>
+  <details><summary>Gdzie zadać pytanie lub zgłosić błąd?</summary><p><a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a> lub <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>.</p></details>
+</section>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img class="big" src="../assets/logo.svg" alt="" width="560" height="208">
+      <nav aria-label="Footer">
+        <a href="https://www.youtube.com/@tolimoto" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>
+        <a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a>
+        <a href="https://app.tolimoto.com/">Tolimoto Log</a>
+        <a href="../pl/guide.html">Jak używać</a>
+        <a href="../pl/privacy.html">Polityka prywatności</a>
+      </nav>
+    </div>
+    <div class="copy"><span>© 2026 Tolimoto</span><span>Bez ciasteczek i śledzenia.</span></div>
+  </div>
+</footer>
+<script src="../assets/site.js?v=d42e514e" defer></script>
+</body>
+</html>

@@ -114,5 +114,15 @@
   "shot_open": "Palielināt",
   "close": "Aizvērt",
   "prev": "Iepriekšējais solis",
-  "next": "Nākamais solis"
+  "next": "Nākamais solis",
+  "nav_guide": "Kā lietot",
+  "hw1_t": "Instalēšana minūtē",
+  "hw1_d": "iPhone un Android, soli pa solim ar attēliem.",
+  "hw2_t": "Pirmie soļi",
+  "hw2_d": "Transportlīdzeklis, uzpilde, grafiks, imports no Fuelly un Fuelio.",
+  "hw3_t": "Kā nepazaudēt datus",
+  "hw3_d": "Jauns tālrunis, pazaudēts tālrunis, izdzēsta lietotne — izlasiet pirms sākat.",
+  "guide_title": "Kā lietot Tolimoto Log",
+  "guide_lead": "No instalēšanas līdz ierakstu drošībai. Sadaļu par datiem izlasiet, pirms sākat rakstīt.",
+  "toc_label": "Saturs"
 }

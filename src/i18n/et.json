@@ -114,5 +114,15 @@
   "shot_open": "Suurenda",
   "close": "Sulge",
   "prev": "Eelmine samm",
-  "next": "Järgmine samm"
+  "next": "Järgmine samm",
+  "nav_guide": "Kasutusjuhend",
+  "hw1_t": "Paigaldus minutiga",
+  "hw1_d": "iPhone ja Android, samm-sammult piltidega.",
+  "hw2_t": "Esimesed sammud",
+  "hw2_d": "Sõiduk, tankimine, hooldusgraafik, import Fuellyst ja Fueliost.",
+  "hw3_t": "Kuidas andmeid mitte kaotada",
+  "hw3_d": "Uus telefon, kadunud telefon, kustutatud rakendus — loe enne alustamist.",
+  "guide_title": "Kuidas kasutada Tolimoto Logi",
+  "guide_lead": "Paigaldusest kuni kirjete turvalisuseni. Loe andmete osa enne, kui hakkad kirjutama.",
+  "toc_label": "Sisukord"
 }

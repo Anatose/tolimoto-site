@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaip naudotis Tolimoto Log</title>
+<meta name="description" content="Nuo įdiegimo iki įrašų saugumo. Skyrių apie duomenis perskaitykite prieš pradėdami rašyti.">
+<meta name="theme-color" content="#0c0d0f">
+<link rel="icon" href="../assets/favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png?v=2">
+<link rel="canonical" href="https://tolimoto.com/lt/guide.html">
+<link rel="alternate" hreflang="en" href="https://tolimoto.com/guide.html">
+<link rel="alternate" hreflang="ru" href="https://tolimoto.com/ru/guide.html">
+<link rel="alternate" hreflang="uk" href="https://tolimoto.com/uk/guide.html">
+<link rel="alternate" hreflang="et" href="https://tolimoto.com/et/guide.html">
+<link rel="alternate" hreflang="lv" href="https://tolimoto.com/lv/guide.html">
+<link rel="alternate" hreflang="lt" href="https://tolimoto.com/lt/guide.html">
+<link rel="alternate" hreflang="pl" href="https://tolimoto.com/pl/guide.html">
+<link rel="alternate" hreflang="x-default" href="https://tolimoto.com/guide.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tolimoto.com/lt/guide.html">
+<meta property="og:title" content="Kaip naudotis Tolimoto Log">
+<meta property="og:description" content="Nuo įdiegimo iki įrašų saugumo. Skyrių apie duomenis perskaitykite prieš pradėdami rašyti.">
+<meta property="og:image" content="https://tolimoto.com/assets/og.png">
+<meta property="og:locale" content="lt_LT">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../assets/fonts/dela-gothic-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css?v=dd5b8c49">
+<script>document.documentElement.classList.add('js')</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Į turinį</a>
+<header class="bar solid fixed-solid" id="bar">
+  <div class="wrap">
+    <a class="brand" href="../lt/#top" aria-label="Tolimoto"><img src="../assets/logo.svg" alt="Tolimoto" width="118" height="44"></a>
+    <nav aria-label="Skyriai">
+      <a href="../lt/#channel">Kanalas</a>
+      <a href="../lt/#app">Programėlė</a>
+      <a href="../lt/#sheet">Priežiūros lentelė</a>
+      <a href="../lt/guide.html" aria-current="page">Kaip naudotis</a>
+      <a href="../lt/#contact">Kontaktai</a>
+    </nav>
+    <details class="langs">
+      <summary aria-label="Kalba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>LT</summary>
+      <ul>
+        <li><a href="../guide.html" hreflang="en" lang="en" data-lang="en"><b>EN</b>English</a></li>
+        <li><a href="../ru/guide.html" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b>Русский</a></li>
+        <li><a href="../uk/guide.html" hreflang="uk" lang="uk" data-lang="uk"><b>UK</b>Українська</a></li>
+        <li><a href="../et/guide.html" hreflang="et" lang="et" data-lang="et"><b>ET</b>Eesti</a></li>
+        <li><a href="../lv/guide.html" hreflang="lv" lang="lv" data-lang="lv"><b>LV</b>Latviešu</a></li>
+        <li><a href="../lt/guide.html" hreflang="lt" lang="lt" data-lang="lt" aria-current="true"><b>LT</b>Lietuvių</a></li>
+        <li><a href="../pl/guide.html" hreflang="pl" lang="pl" data-lang="pl"><b>PL</b>Polski</a></li>
+        
+      </ul>
+    </details>
+  </div>
+</header>
+
+<main class="guide" id="main">
+  <div class="wrap">
+    <header class="g-head">
+      <h1>Kaip naudotis Tolimoto Log</h1>
+      <p class="lead">Nuo įdiegimo iki įrašų saugumo. Skyrių apie duomenis perskaitykite prieš pradėdami rašyti.</p>
+      <div class="btns"><a class="btn blue" href="https://app.tolimoto.com/">Atidaryti programėlę <span aria-hidden="true">→</span></a></div>
+    </header>
+    <div class="g-grid">
+      <nav class="g-toc" aria-label="Turinys">
+        <span class="mono">Turinys</span>
+        <a href="#install">Kaip įdiegti</a>
+        <a href="#start">Pirmieji žingsniai</a>
+        <a href="#schedule">Darbai ir priežiūros grafikas</a>
+        <a href="#log">Žurnalas ir statistika</a>
+        <a href="#import">Perėjimas iš Fuelly ar Fuelio</a>
+        <a href="#google">Google lentelė ir nuotraukos</a>
+        <a href="#data" class="key">Kaip neprarasti duomenų</a>
+        <a href="#faq">Klausimai</a>
+        
+      </nav>
+      <div class="g-body">
+        <section id="install-wrap">
+      <!-- install guide -->
+      <div class="install" id="install">
+        <h3 class="rv">Kaip įdiegti</h3>
+        <p class="lead rv">Tolimoto Log yra žiniatinklio programėlė: nieko nereikia atsisiųsti iš parduotuvės. Pridėkite ją prie pradžios ekrano — ji atsidarys per visą ekraną kaip įprasta programėlė ir veiks be ryšio.</p>
+        <div class="os-tabs rv" role="tablist" aria-label="Kaip įdiegti">
+          <button type="button" role="tab" id="tab-ios" aria-controls="steps-ios" aria-selected="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1.1.1 2.1-.5 2.7-1.2z"/></svg>iPhone</button>
+          <button type="button" role="tab" id="tab-and" aria-controls="steps-and" aria-selected="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.5 9h9a1 1 0 0 1 1 1v7a1.5 1.5 0 0 1-1.5 1.5H15V21a1 1 0 0 1-2 0v-2.5h-2V21a1 1 0 0 1-2 0v-2.5H8A1.5 1.5 0 0 1 6.5 17v-7a1 1 0 0 1 1-1zm-3 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zm15 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zM8.2 3.3l1 1.6A6 6 0 0 1 12 4.3c1 0 2 .2 2.8.6l1-1.6a.4.4 0 0 1 .7.4l-1 1.5A5.2 5.2 0 0 1 17.5 8h-11a5.2 5.2 0 0 1 2-2.8l-1-1.5a.4.4 0 0 1 .7-.4zM10 6.2a.6.6 0 1 0 0 1.2.6.6 0 0 0 0-1.2zm4 0a.6.6 0 1 0 0 1.2.6.6 0 0 0 0-1.2z"/></svg>Android</button>
+        </div>
+        <ol class="steps" id="steps-ios" role="tabpanel" aria-labelledby="tab-ios">
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Atidarykite programėlę Safari"><div class="mock ios-open" aria-hidden="true">
+    <img class="page" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="sf-bar"><span class="sf-url">app.tolimoto.com</span><div class="sf-tools"><i class="ic back"></i><i class="ic fwd"></i><i class="ic share"></i><i class="ic book"></i><i class="ic tabs"></i></div></div>
+</div></button><div class="st-txt"><b>1. Atidarykite programėlę Safari</b><span>Safari — standartinėje iPhone naršyklėje — atidarykite app.tolimoto.com.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Bakstelėkite „Bendrinti“"><div class="mock ios-share" aria-hidden="true">
+    <img class="page" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="sf-bar"><span class="sf-url">app.tolimoto.com</span><div class="sf-tools"><i class="ic back"></i><i class="ic fwd"></i><i class="ic share hit"></i><i class="ic book"></i><i class="ic tabs"></i></div></div>
+</div></button><div class="st-txt"><b>2. Bakstelėkite „Bendrinti“</b><span>Kvadratas su rodykle aukštyn juostoje ekrano apačioje.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Pasirinkite „Pridėti prie pradžios ekrano“"><div class="mock ios-sheet" aria-hidden="true">
+    <img class="page dim" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="sheet-ui"><div class="sh-head"><b class="appic"></b><span>Tolimoto Log<small>app.tolimoto.com</small></span></div>
+      <div class="sh-row">Kopijuoti</div><div class="sh-row">Pridėti prie skaitinių sąrašo</div><div class="sh-row">Pridėti žymelę</div><div class="sh-row hit">Pridėti prie pradžios ekrano<i class="ic plus"></i></div></div>
+</div></button><div class="st-txt"><b>3. Pasirinkite „Pridėti prie pradžios ekrano“</b><span>Jei punkto iš karto nematote, slinkite sąrašą žemyn.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Bakstelėkite „Pridėti“"><div class="mock ios-add" aria-hidden="true">
+    <div class="add-ui"><div class="add-top"><span>Atšaukti</span><b class="hit">Pridėti</b></div>
+      <div class="add-card"><b class="appic"></b><div><span>Tolimoto Log</span><small>https://app.tolimoto.com</small></div></div></div>
+</div></button><div class="st-txt"><b>4. Bakstelėkite „Pridėti“</b><span>Pavadinimą Tolimoto Log galite palikti arba sutrumpinti.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Atidarykite iš pradžios ekrano"><div class="mock ios-home" aria-hidden="true">
+    <div class="home-ui"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><span class="me hit"><b class="appic"></b><small>Tolimoto</small></span><i></i><i></i><i></i><i></i></div>
+</div></button><div class="st-txt"><b>5. Atidarykite iš pradžios ekrano</b><span>Toliau programėlę paleiskite iš piktogramos, o ne iš Safari.</span></div></li>
+          
+        </ol>
+        <ol class="steps" id="steps-and" role="tabpanel" aria-labelledby="tab-and" hidden>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Atidarykite programėlę Chrome"><div class="mock and-open" aria-hidden="true">
+    <div class="cr-bar"><span class="cr-url">app.tolimoto.com</span><i class="ic dots"></i></div>
+    <img class="page" src="../assets/img/en-home.webp" alt="" loading="lazy">
+</div></button><div class="st-txt"><b>1. Atidarykite programėlę Chrome</b><span>Chrome naršyklėje atidarykite app.tolimoto.com.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Atidarykite meniu"><div class="mock and-menu" aria-hidden="true">
+    <div class="cr-bar"><span class="cr-url">app.tolimoto.com</span><i class="ic dots hit"></i></div>
+    <img class="page" src="../assets/img/en-home.webp" alt="" loading="lazy">
+</div></button><div class="st-txt"><b>2. Atidarykite meniu</b><span>Trys taškai viršutiniame dešiniajame kampe.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Pasirinkite „Įdiegti programą“"><div class="mock and-list" aria-hidden="true">
+    <div class="cr-bar"><span class="cr-url">app.tolimoto.com</span><i class="ic dots"></i></div>
+    <img class="page dim" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="cr-menu"><div>Naujas skirtukas</div><div>Istorija</div><div>Pridėti žymelę</div><div class="hit">Įdiegti programą</div></div>
+</div></button><div class="st-txt"><b>3. Pasirinkite „Įdiegti programą“</b><span>Kai kuriuose telefonuose punktas vadinasi „Pridėti prie pagrindinio ekrano“.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Patvirtinkite"><div class="mock and-dialog" aria-hidden="true">
+    <img class="page dim" src="../assets/img/en-home.webp" alt="" loading="lazy">
+    <div class="cr-dialog"><b>Įdiegti programą?</b><div class="add-card"><b class="appic"></b><div><span>Tolimoto Log</span><small>app.tolimoto.com</small></div></div><div class="cr-btns"><span>Atšaukti</span><span class="hit">Įdiegti</span></div></div>
+</div></button><div class="st-txt"><b>4. Patvirtinkite</b><span>Bakstelėkite „Įdiegti“. Chrome tai gali pasiūlyti ir pati ekrano apačioje.</span></div></li>
+          
+          <li class="rv"><button type="button" class="zoom" aria-label="Padidinti: Atidarykite iš pagrindinio ekrano"><div class="mock and-home" aria-hidden="true">
+    <div class="home-ui droid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><span class="me hit"><b class="appic"></b><small>Tolimoto</small></span><i></i><i></i><i></i><i></i></div>
+</div></button><div class="st-txt"><b>5. Atidarykite iš pagrindinio ekrano</b><span>Piktograma atsiras pagrindiniame ekrane ir programų sąraše.</span></div></li>
+          
+        </ol>
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Kaip įdiegti" hidden>
+          <button type="button" class="lb-close" aria-label="Uždaryti">×</button>
+          <button type="button" class="lb-nav lb-prev" aria-label="Ankstesnis žingsnis">‹</button>
+          <figure><div class="lb-stage"></div><figcaption></figcaption></figure>
+          <button type="button" class="lb-nav lb-next" aria-label="Kitas žingsnis">›</button>
+        </div>
+        <div class="inst-notes rv">
+          <p class="warn"><b>Pirmiausia įdiekite, tada rašykite.</b> iPhone įdiegta programėlė duomenis saugo atskirai nuo Safari. Pridėkite ją prie pradžios ekrano prieš pradėdami vesti įrašus — arba perkelkite juos JSON atsargine kopija iš nustatymų.</p>
+          <p class="note">Android įrenginiuose programėlė veikia Chrome. Pirmiausia ji buvo kuriama ir tikrinama iPhone, tad jei kas nors atrodo ne taip — parašykite mums. Paveikslėliai supaprastinti; meniu punktų pavadinimai skirtingose sistemos versijose gali šiek tiek skirtis.</p>
+        </div>
+      </div>
+</section>
+        <section id="start">
+  <h2>Pirmieji žingsniai</h2>
+  <ol class="g-steps">
+    <li><b>Pridėkite transporto priemonę.</b> Pavadinimas, motociklas ar automobilis, valiuta ir dabartinė rida. Palikite įjungtą „Tipinį rinkinį“ — programėlė pati užpildys priežiūros grafiką (alyva, filtrai, grandinė, stabdžių skystis…), jį vėliau galima keisti.</li>
+    <li><b>Užrašykite pylimą.</b> Didelis mėlynas mygtukas pirmame ekrane. Įveskite ridą, litrus ir čekio sumą (arba litro kainą — kita apskaičiuojama pati). Pažymėkite „Pilnas bakas“, kai pilate iki viršaus: sąnaudos skaičiuojamos tarp pilnų bakų.</li>
+    <li><b>Kelios transporto priemonės?</b> Perbraukite kortelę ekrano „Garažas“ viršuje. Pylimo mygtukas visada veikia rodomai transporto priemonei.</li>
+    <li><b>Tik rida.</b> „Atnaujinti“ kortelėje įrašo ridą be pylimo — patogu prieš priežiūrą.</li>
+  </ol>
+  <p class="g-note">Programėlės sąsaja kol kas yra anglų ir rusų kalbomis; mygtukų pavadinimai žemiau išversti.</p>
+</section>
+
+<section id="schedule">
+  <h2>Darbai ir priežiūros grafikas</h2>
+  <p>Kiekvienas darbas — tai įrašas: data, rida, kategorija (Priežiūra, Eksploatacinės medžiagos, Remontas, Aksesuarai), kas padaryta, detalių ir darbo kaina, pastabos ir čekių nuotraukos.</p>
+  <ul>
+    <li><b>Mazgai ir žymos.</b> Pakeitėte alyvą — pažymėkite mazgą „Variklio alyva“ (žyma <code>#engineoil</code>). Taip programėlė žino, kada tai daryta paskutinį kartą.</li>
+    <li><b>Grafikas.</b> Kiekvienas mazgas turi intervalą kilometrais ir (arba) dienomis. Programėlė rodo, kiek liko, ir nuspalvina būseną: <span class="g-ok">Gerai</span>, <span class="g-soon">Netrukus</span>, <span class="g-over">Pavėluota</span>.</li>
+    <li><b>Savi mazgai.</b> „+ Mazgas“ grafiko ekrane: pavadinimas, žyma, intervalas ir priminimas iš naudojimo instrukcijos (alyvos kiekis, priveržimo momentai).</li>
+  </ul>
+</section>
+
+<section id="log">
+  <h2>Žurnalas ir statistika</h2>
+  <ul>
+    <li><b>Žurnalas</b> — visi įrašai viename sąraše: paieška pagal tekstą ir detalių numerius, filtrai pagal darbus, pylimus ir išlaidas, datų laikotarpis. Kiekvienas pylimas turi savo sąnaudas: žalias, kai pastebimai mažesnės už vidutines, raudonas — kai gerokai didesnės.</li>
+    <li><b>Statistika</b> — išlaidos pagal metus (priežiūra ir remontas, aksesuarai, degalai, draudimas ir kita), kilometro kaina, vidutinės sąnaudos ir grafikai. Bakstelėkite eilutę — pamatysite, iš ko ji susideda.</li>
+    <li><b>Išlaidos</b> — draudimas, techninė apžiūra, mokesčiai ir visa kita, mygtuku „+“.</li>
+  </ul>
+</section>
+
+<section id="import">
+  <h2>Perėjimas iš Fuelly ar Fuelio</h2>
+  <ul>
+    <li><b>Fuelly:</b> fuelly.com atidarykite savo transporto priemonę → eksportuokite pylimus CSV formatu.</li>
+    <li><b>Fuelio:</b> padarykite Fuelio CSV atsarginę kopiją; ten kiekvienai transporto priemonei atskiras failas (<code>vehicle-…-sync.csv</code>). Galima pasirinkti kelis failus iš karto. Fuelio išlaidos taip pat perkeliamos: darbai — į žurnalą, draudimas ir mokesčiai — į išlaidas.</li>
+    <li>Tolimoto Log: Nustatymai → „Importas iš Fuelly ar Fuelio (CSV)“, tada pasirinkite, kuriai transporto priemonei priskirti kiekvieną failą. Mylios ir galonai perskaičiuojami. Pakartotinai importavus tą patį failą, įrašai pakeičiami, o ne dubliuojami.</li>
+  </ul>
+</section>
+
+<section id="google">
+  <h2>Google lentelė ir nuotraukos</h2>
+  <ul>
+    <li>Nustatymai → „Prisijungti su Google“. Programėlė sukurs jūsų Google Diske aplanką „Tolimoto Log“ su lentele ir aplanku „Receipts“ nuotraukoms.</li>
+    <li>Sinchronizuojama savaime: atidarius programėlę, po kiekvieno pakeitimo ir atsiradus ryšiui. Įrašus galima taisyti ir lentelėje — pakeitimai grįš į programėlę.</li>
+    <li>Skirtuką „Summary“ (suvestinė: grafikas, dabartinė rida, išlaidos pagal metus) kuria programėlė. Duomenis taisykite kituose skirtukuose.</li>
+    <li>Programėlė mato tik failus, kuriuos sukūrė pati. Plačiau — <a href="../lt/privacy.html">privatumo politikoje</a>.</li>
+  </ul>
+  <p class="g-note">Beta metu prisijungimas su Google atviras tik testuotojams. Kitiems — atsarginės kopijos (žemiau).</p>
+</section>
+
+<section id="data" class="g-key">
+  <h2>Kaip neprarasti duomenų</h2>
+  <p class="g-lead">Be Google jūsų įrašai gyvena <b>tik programėlėje šiame telefone</b>. Pametėte ar sudaužėte telefoną, ištrynėte programėlę — įrašai dingo. Pasirinkite vieną iš dviejų būdų ir nustatykite jį šiandien.</p>
+  <div class="g-two">
+    <div class="g-card">
+      <span class="mono">1 · rekomenduojame</span>
+      <b>Google lentelė</b>
+      <p>Viskas savaime kopijuojama į jūsų Google Diską. Naujas telefonas: įdiekite programėlę, prisijunkite su ta pačia paskyra — viskas sugrįš.</p>
+    </div>
+    <div class="g-card">
+      <span class="mono">2 · be Google</span>
+      <b>Atsarginės kopijos failas</b>
+      <p>Nustatymai → „Duomenų saugumas“ → „Išsaugoti atsarginę kopiją“. JSON failą išsaugokite <b>ne tik telefone</b>: iCloud Drive, Google Diske arba nusiųskite sau el. paštu. Programėlė primena kartą per mėnesį ir rodo paskutinės kopijos datą.</p>
+    </div>
+  </div>
+  <h3>Naujas telefonas</h3>
+  <ol class="g-steps">
+    <li>Įdiekite programėlę (žr. aukščiau) ir atidarykite ją iš piktogramos.</li>
+    <li>Ekrane „Kur laikyti jūsų įrašus?“ pasirinkite „Prijungti Google“ — arba „Atkurti iš atsarginės kopijos“ ir nurodykite JSON failą.</li>
+  </ol>
+  <h3>Kas ištrina duomenis</h3>
+  <ul>
+    <li>Pašalinus programėlę iš iPhone pradžios ekrano, ištrinami ir jos įrašai. Pirmiausia padarykite kopiją.</li>
+    <li>Svetainių duomenų išvalymas naršyklės nustatymuose taip pat gali juos ištrinti.</li>
+    <li>Įrašai Safari skirtuke ir įdiegtoje programėlėje yra atskiri. Pirmiausia įdiekite, tada rašykite.</li>
+  </ul>
+</section>
+
+<section id="faq">
+  <h2>Klausimai</h2>
+  <details><summary>Ar Tolimoto mato mano įrašus?</summary><p>Ne. Tolimoto neturi serverio: duomenys lieka jūsų telefone ir, jei prijungsite, jūsų pačių Google Diske.</p></details>
+  <details><summary>Ar veikia be interneto?</summary><p>Taip. Viskas veikia be ryšio; sinchronizacija su Google pasivys, kai ryšys atsiras.</p></details>
+  <details><summary>Ar galima vesti kelis motociklus ir automobilius?</summary><p>Taip, kiek tik norite. Kiekvienas turi savo grafiką, žurnalą ir statistiką.</p></details>
+  <details><summary>O Android?</summary><p>Programėlė veikia Chrome naršyklėje Android įrenginiuose ir įdiegiama iš jos meniu. Pirmiausia ji buvo kuriama ir tikrinama iPhone — jei kas nors ne taip, <a href="mailto:contact@tolimoto.com">parašykite mums</a>.</p></details>
+  <details><summary>Kur užduoti klausimą ar pranešti apie klaidą?</summary><p><a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a> arba <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>.</p></details>
+</section>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img class="big" src="../assets/logo.svg" alt="" width="560" height="208">
+      <nav aria-label="Footer">
+        <a href="https://www.youtube.com/@tolimoto" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>
+        <a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a>
+        <a href="https://app.tolimoto.com/">Tolimoto Log</a>
+        <a href="../lt/guide.html">Kaip naudotis</a>
+        <a href="../lt/privacy.html">Privatumo politika</a>
+      </nav>
+    </div>
+    <div class="copy"><span>© 2026 Tolimoto</span><span>Jokių slapukų ir sekiklių.</span></div>
+  </div>
+</footer>
+<script src="../assets/site.js?v=d42e514e" defer></script>
+</body>
+</html>

@@ -41,6 +41,7 @@
       <a href="{{ link(lang, 'index.html') }}#channel">{{ t.nav_channel }}</a>
       <a href="{{ link(lang, 'index.html') }}#app">{{ t.nav_app }}</a>
       <a href="{{ link(lang, 'index.html') }}#sheet">{{ t.nav_sheet }}</a>
+      <a href="{{ link(lang, 'guide.html') }}"{% if page == 'guide.html' %} aria-current="page"{% endif %}>{{ t.nav_guide }}</a>
       <a href="{{ link(lang, 'index.html') }}#contact">{{ t.nav_contact }}</a>
     </nav>
     <details class="langs">
@@ -62,6 +63,7 @@
         <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>
         <a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a>
         <a href="https://app.tolimoto.com/">Tolimoto Log</a>
+        <a href="{{ link(lang, 'guide.html') }}">{{ t.nav_guide }}</a>
         <a href="{{ link(lang, 'privacy.html') }}">{{ t.footer_privacy }}</a>
       </nav>
     </div>
