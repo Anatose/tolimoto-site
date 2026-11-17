@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}{{ t.pv_title }} — Tolimoto Log{% endblock %}
+{% block desc %}{{ t.pv_desc }}{% endblock %}
+{% block barclass %} solid fixed-solid{% endblock %}
+{% block main %}
+<main class="doc" id="main">
+  <div class="wrap">
+    <h1>{{ t.pv_title }}</h1>
+    <div class="updated mono">Tolimoto Log · tolimoto.com · {{ t.pv_updated }}</div>
+    {% if lang != 'en' %}<p class="note">{{ t.pv_translation }} <a href="{{ link('en', 'privacy.html') }}">English</a></p>{% endif %}
+    {{ body }}
+  </div>
+</main>
+{% endblock %}

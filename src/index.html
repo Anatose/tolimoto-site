@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% block title %}{{ t.meta_title }}{% endblock %}
+{% block desc %}{{ t.meta_desc }}{% endblock %}
+
+{% macro scr(kind) -%}
+{%- set shot = R ~ 'assets/img/' ~ shots ~ '-home.webp' -%}
+<div class="mock {{ kind }}" aria-hidden="true">
+  {%- if kind.startswith('ios') %}
+    {%- if kind in ['ios-open', 'ios-share'] %}
+    <img class="page" src="{{ shot }}" alt="" loading="lazy">
+    <div class="sf-bar"><span class="sf-url">app.tolimoto.com</span><div class="sf-tools"><i class="ic back"></i><i class="ic fwd"></i><i class="ic share{% if kind == 'ios-share' %} hit{% endif %}"></i><i class="ic book"></i><i class="ic tabs"></i></div></div>
+    {%- elif kind == 'ios-sheet' %}
+    <img class="page dim" src="{{ shot }}" alt="" loading="lazy">
+    <div class="sheet-ui"><div class="sh-head"><b class="appic"></b><span>Tolimoto Log<small>app.tolimoto.com</small></span></div>
+      <div class="sh-row">{{ t.ui_copy }}</div><div class="sh-row">{{ t.ui_reading }}</div><div class="sh-row">{{ t.ui_bookmark }}</div><div class="sh-row hit">{{ t.ui_a2hs }}<i class="ic plus"></i></div></div>
+    {%- elif kind == 'ios-add' %}
+    <div class="add-ui"><div class="add-top"><span>{{ t.ui_cancel }}</span><b class="hit">{{ t.ui_add }}</b></div>
+      <div class="add-card"><b class="appic"></b><div><span>Tolimoto Log</span><small>https://app.tolimoto.com</small></div></div></div>
+    {%- endif %}
+  {%- elif kind.startswith('and') %}
+    {%- if kind in ['and-open', 'and-menu'] %}
+    <div class="cr-bar"><span class="cr-url">app.tolimoto.com</span><i class="ic dots{% if kind == 'and-menu' %} hit{% endif %}"></i></div>
+    <img class="page" src="{{ shot }}" alt="" loading="lazy">
+    {%- elif kind == 'and-list' %}
+    <div class="cr-bar"><span class="cr-url">app.tolimoto.com</span><i class="ic dots"></i></div>
+    <img class="page dim" src="{{ shot }}" alt="" loading="lazy">
+    <div class="cr-menu"><div>{{ t.ui_newtab }}</div><div>{{ t.ui_history }}</div><div>{{ t.ui_bookmark }}</div><div class="hit">{{ t.ui_install_app }}</div></div>
+    {%- elif kind == 'and-dialog' %}
+    <img class="page dim" src="{{ shot }}" alt="" loading="lazy">
+    <div class="cr-dialog"><b>{{ t.ui_install_q }}</b><div class="add-card"><b class="appic"></b><div><span>Tolimoto Log</span><small>app.tolimoto.com</small></div></div><div class="cr-btns"><span>{{ t.ui_cancel }}</span><span class="hit">{{ t.ui_install }}</span></div></div>
+    {%- endif %}
+  {%- endif %}
+  {%- if kind.endswith('home') %}
+    <div class="home-ui{% if kind.startswith('and') %} droid{% endif %}">{% for i in range(11) %}<i></i>{% endfor %}<span class="me hit"><b class="appic"></b><small>Tolimoto</small></span>{% for i in range(4) %}<i></i>{% endfor %}</div>
+  {%- endif %}
+</div>
+{%- endmacro %}
+
+{% block main %}
+<main id="main">
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="top">
+    <div class="wrap hero-top">
+      <h1 class="hero-links">
+        <a class="rise" href="https://www.youtube.com/@tolimoto" target="_blank" rel="noopener">{{ t.hero_road }}<sup aria-hidden="true">↗</sup></a>
+        <a class="rise d1" href="#app">{{ t.hero_garage }}<sup aria-hidden="true">↘</sup></a>
+        <a class="rise d2" href="#sheet">{{ t.hero_log }}<sup aria-hidden="true">↘</sup></a>
+      </h1>
+      <div class="hero-side rise d3">
+        <p>{{ t.hero_lead }}</p>
+        <div class="btns">
+          <a class="btn hot" href="https://www.youtube.com/@tolimoto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>{{ t.btn_youtube }}</a>
+          <a class="btn" href="#app">{{ t.btn_app }}</a>
+        </div>
+      </div>
+    </div>
+    <div class="wordmark rise d3">
+      <div class="wrap"><img src="{{ R }}assets/logo.svg" alt="Tolimoto" width="2914" height="1084"></div>
+      <div class="road" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ======================= CHANNEL ======================= -->
+  <section class="block" id="channel">
+    <div class="wrap">
+      <div class="eyebrow mono rv" data-n="01">{{ t.nav_channel }}</div>
+      <h2 class="rv">{{ t.ch_title }}</h2>
+      <p class="lead rv">{{ t.ch_lead }}</p>
+      <div class="pillars rv">
+        {% for i in [1, 2, 3] %}
+        <div class="pillar">
+          <div class="mono">0{{ i }} / {{ t['p%d_tag' % i] }}</div>
+          <h3>{{ t['p%d_title' % i] }}</h3>
+          <p>{{ t['p%d_text' % i] }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="channels rv">
+        <a class="chan yt" href="https://www.youtube.com/@tolimoto" target="_blank" rel="noopener">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></div>
+          <div><b>YouTube</b><span>{{ t.yt_sub }}</span></div>
+          <div class="arrow" aria-hidden="true">↗</div>
+        </a>
+        <a class="chan tg" href="https://t.me/tolimoto" target="_blank" rel="noopener">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 3.6 2.9 10.8c-1.1.4-1.1 1.1-.2 1.4l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.3-1.5zM8.6 13.4l9.6-6.1c.5-.3.9-.1.5.2l-8.2 7.4-.3 3.4z"/></svg></div>
+          <div><b>Telegram</b><span>{{ t.tg_sub }}</span></div>
+          <div class="arrow" aria-hidden="true">↗</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= APP ======================= -->
+  <section class="block app" id="app">
+    <div class="wrap">
+      <div class="eyebrow mono rv" data-n="02">{{ t.nav_app }}</div>
+      <div class="app-grid">
+        <div class="phones rv">
+          <figure class="phone p2"><div class="scr"><img src="{{ R }}assets/img/{{ shots }}-schedule.webp" alt="{{ t.alt_sched }}" width="780" height="1688" loading="lazy"></div></figure>
+          <figure class="phone p3"><div class="scr"><img src="{{ R }}assets/img/{{ shots }}-stats.webp" alt="{{ t.alt_stats }}" width="780" height="1688" loading="lazy"></div></figure>
+          <figure class="phone p1"><div class="scr"><img src="{{ R }}assets/img/{{ shots }}-home.webp" alt="{{ t.alt_home }}" width="780" height="1688" loading="lazy"></div></figure>
+        </div>
+        <div>
+          <h2 class="rv">Tolimoto Log<span class="tag">BETA</span></h2>
+          <p class="lead rv">{{ t.app_lead }}</p>
+          <ul class="feats rv">
+            {% for i in range(1, 7) %}<li><b>{{ t['f%d_t' % i] }}</b><span>{{ t['f%d_d' % i] }}</span></li>
+            {% endfor %}
+          </ul>
+          <div class="trust rv">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.1 8.4 7.5 9.5 4.4-1.1 7.5-4.9 7.5-9.5V6z"/><path d="m8.8 12 2.2 2.2 4.4-4.4"/></svg>
+            <p>{{ t.trust }} <a href="{{ link(lang, 'privacy.html') }}">{{ t.footer_privacy }}</a></p>
+          </div>
+          <div class="btns rv">
+            <a class="btn blue" href="https://app.tolimoto.com/">{{ t.btn_open }} <span aria-hidden="true">→</span></a>
+            <a class="btn" href="#install">{{ t.inst_title }}</a>
+          </div>
+          {% if lang not in ['ru', 'en'] %}<p class="note rv">{{ t.app_langs_note }}</p>{% endif %}
+        </div>
+      </div>
+
+      <!-- install guide -->
+      <div class="install" id="install">
+        <h3 class="rv">{{ t.inst_title }}</h3>
+        <p class="lead rv">{{ t.inst_lead }}</p>
+        <div class="os-tabs rv" role="tablist" aria-label="{{ t.inst_title }}">
+          <button type="button" role="tab" id="tab-ios" aria-controls="steps-ios" aria-selected="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1.1.1 2.1-.5 2.7-1.2z"/></svg>iPhone</button>
+          <button type="button" role="tab" id="tab-and" aria-controls="steps-and" aria-selected="false"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.5 9h9a1 1 0 0 1 1 1v7a1.5 1.5 0 0 1-1.5 1.5H15V21a1 1 0 0 1-2 0v-2.5h-2V21a1 1 0 0 1-2 0v-2.5H8A1.5 1.5 0 0 1 6.5 17v-7a1 1 0 0 1 1-1zm-3 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zm15 0a1 1 0 0 1 1 1v5a1 1 0 0 1-2 0v-5a1 1 0 0 1 1-1zM8.2 3.3l1 1.6A6 6 0 0 1 12 4.3c1 0 2 .2 2.8.6l1-1.6a.4.4 0 0 1 .7.4l-1 1.5A5.2 5.2 0 0 1 17.5 8h-11a5.2 5.2 0 0 1 2-2.8l-1-1.5a.4.4 0 0 1 .7-.4zM10 6.2a.6.6 0 1 0 0 1.2.6.6 0 0 0 0-1.2zm4 0a.6.6 0 1 0 0 1.2.6.6 0 0 0 0-1.2z"/></svg>Android</button>
+        </div>
+        <ol class="steps" id="steps-ios" role="tabpanel" aria-labelledby="tab-ios">
+          {% for k in ['ios-open', 'ios-share', 'ios-sheet', 'ios-add', 'ios-home'] %}
+          <li class="rv">{{ scr(k) }}<div class="st-txt"><b>{{ loop.index }}. {{ t['ios%d_t' % loop.index] }}</b><span>{{ t['ios%d_d' % loop.index] }}</span></div></li>
+          {% endfor %}
+        </ol>
+        <ol class="steps" id="steps-and" role="tabpanel" aria-labelledby="tab-and" hidden>
+          {% for k in ['and-open', 'and-menu', 'and-list', 'and-dialog', 'and-home'] %}
+          <li class="rv">{{ scr(k) }}<div class="st-txt"><b>{{ loop.index }}. {{ t['and%d_t' % loop.index] }}</b><span>{{ t['and%d_d' % loop.index] }}</span></div></li>
+          {% endfor %}
+        </ol>
+        <div class="inst-notes rv">
+          <p class="warn"><b>{{ t.inst_warn_t }}</b> {{ t.inst_warn }}</p>
+          <p class="note">{{ t.inst_android_note }} {{ t.illust_note }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SHEET ======================= -->
+  <section class="block" id="sheet">
+    <div class="wrap sheet-grid">
+      <div>
+        <div class="eyebrow mono rv" data-n="03">{{ t.nav_sheet }}</div>
+        <h2 class="rv">{{ t.sheet_title }}</h2>
+        <p class="lead rv">{{ t.sheet_lead }}</p>
+        <div class="btns rv"><a class="btn light" href="https://tinyurl.com/TablitsaRUS" target="_blank" rel="noopener">{{ t.btn_template }} <span aria-hidden="true">↗</span></a></div>
+        <div class="langs-row rv" aria-hidden="true">{% for c in ['RU', 'EN', 'ET', 'PL', 'LV', 'UK'] %}<span{% if c == 'RU' %} class="on"{% endif %}>{{ c }}</span>{% endfor %}</div>
+        <p class="note rv">{{ t.sheet_langs_note }}</p>
+      </div>
+      <div class="faux-wrap rv" aria-hidden="true">
+        <div class="faux">
+          <div class="tb"><i></i><i></i><i></i><span>{{ t.nav_sheet }} · Summary</span></div>
+          <table>
+            <tr><td class="sec" colspan="5">YAMAHA TÉNÉRÉ 700 · 28 674 {{ t.fx_km }}</td></tr>
+            <tr><th>{{ t.fx_item }}</th><th>{{ t.fx_interval }}</th><th>{{ t.fx_last }}</th><th>{{ t.fx_left }}</th><th>{{ t.fx_status }}</th></tr>
+            <tr><td>{{ t.fx_oil }}</td><td class="n">10 000</td><td class="n">23 481</td><td class="n">4 807</td><td><span class="st ok">{{ t.fx_ok }}</span></td></tr>
+            <tr><td>{{ t.fx_chain }}</td><td class="n">20 000</td><td class="n">24 120</td><td class="n">15 446</td><td><span class="st ok">{{ t.fx_ok }}</span></td></tr>
+            <tr><td>{{ t.fx_brake }}</td><td class="n">730 {{ t.fx_days }}</td><td class="n">05.04.2024</td><td class="n">−42 {{ t.fx_days }}</td><td><span class="st over">{{ t.fx_over }}</span></td></tr>
+            <tr><td>{{ t.fx_plugs }}</td><td class="n">40 000</td><td class="n">0</td><td class="n">11 326</td><td><span class="st ok">{{ t.fx_ok }}</span></td></tr>
+            <tr><td>{{ t.fx_air }}</td><td class="n">20 000</td><td class="n">9 200</td><td class="n">526</td><td><span class="st soon">{{ t.fx_soon }}</span></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CONTACT ======================= -->
+  <section class="block contact" id="contact">
+    <div class="wrap">
+      <div class="eyebrow mono rv" data-n="04">{{ t.nav_contact }}</div>
+      <h2 class="rv">{{ t.contact_title }}</h2>
+      <p class="lead rv">{{ t.contact_lead }}</p>
+      <div class="contact-grid rv">
+        <a class="ct mail" href="mailto:contact@tolimoto.com"><span class="mono">{{ t.contact_email }}</span><b>contact@tolimoto.com</b></a>
+        <a class="ct" href="https://t.me/tolimoto" target="_blank" rel="noopener"><span class="mono">Telegram</span><b>@tolimoto</b></a>
+        <a class="ct" href="https://www.youtube.com/@tolimoto" target="_blank" rel="noopener"><span class="mono">YouTube</span><b>@tolimoto</b></a>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

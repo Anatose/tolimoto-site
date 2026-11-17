@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{% endblock %}</title>
+<meta name="description" content="{% block desc %}{% endblock %}">
+<meta name="theme-color" content="#0c0d0f">
+<link rel="icon" href="{{ R }}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ R }}assets/apple-touch-icon.png">
+<link rel="canonical" href="{{ abs(lang, page) }}">
+{% for l in langs %}<link rel="alternate" hreflang="{{ l.code }}" href="{{ abs(l.code, page) }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ abs('en', page) }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ abs(lang, page) }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.desc() }}">
+<meta property="og:image" content="https://tolimoto.com/assets/og.png">
+<meta property="og:locale" content="{{ L.og }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="{{ R }}assets/fonts/dela-gothic-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ R }}assets/style.css">
+<script>document.documentElement.classList.add('js')</script>
+{% if page == 'index.html' and lang == 'en' %}<script>
+  // first visit to the English home page: go to the visitor's language if the site has it
+  (function () {
+    var saved = null
+    try { saved = localStorage.getItem('tl-site-lang') } catch (e) {}
+    var have = {{ lang_codes|tojson }}
+    var want = saved || ((navigator.languages || [navigator.language || ''])[0] || '').slice(0, 2).toLowerCase()
+    if (want && want !== 'en' && have.indexOf(want) >= 0 && !/[?&]stay/.test(location.search)) location.replace(want + '/' + location.hash)
+  })()
+</script>{% endif %}
+</head>
+<body>
+<a class="skip" href="#main">{{ t.skip }}</a>
+<header class="bar{% block barclass %}{% endblock %}" id="bar">
+  <div class="wrap">
+    <a class="brand" href="{{ link(lang, 'index.html') }}#top" aria-label="Tolimoto"><img src="{{ R }}assets/logo.svg" alt="Tolimoto" width="118" height="44"></a>
+    <nav aria-label="{{ t.nav_label }}">
+      <a href="{{ link(lang, 'index.html') }}#channel">{{ t.nav_channel }}</a>
+      <a href="{{ link(lang, 'index.html') }}#app">{{ t.nav_app }}</a>
+      <a href="{{ link(lang, 'index.html') }}#sheet">{{ t.nav_sheet }}</a>
+      <a href="{{ link(lang, 'index.html') }}#contact">{{ t.nav_contact }}</a>
+    </nav>
+    <details class="langs">
+      <summary aria-label="{{ t.lang_label }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>{{ lang|upper }}</summary>
+      <ul>
+        {% for l in langs %}<li><a href="{{ link(l.code, page) }}" hreflang="{{ l.code }}" lang="{{ l.code }}" data-lang="{{ l.code }}"{% if l.code == lang %} aria-current="true"{% endif %}><b>{{ l.code|upper }}</b>{{ l.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </details>
+  </div>
+</header>
+{% block main %}{% endblock %}
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img class="big" src="{{ R }}assets/logo.svg" alt="" width="560" height="208">
+      <nav aria-label="Footer">
+        <a href="https://www.youtube.com/@tolimoto" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>
+        <a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a>
+        <a href="https://app.tolimoto.com/">Tolimoto Log</a>
+        <a href="{{ link(lang, 'privacy.html') }}">{{ t.footer_privacy }}</a>
+      </nav>
+    </div>
+    <div class="copy"><span>© 2026 Tolimoto</span><span>{{ t.footer_nocookies }}</span></div>
+  </div>
+</footer>
+<script src="{{ R }}assets/site.js" defer></script>
+</body>
+</html>
