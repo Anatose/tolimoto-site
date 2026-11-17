@@ -70,7 +70,7 @@ a { color: inherit; }
 @media (max-width: 900px) { .bar nav { display: none; } .langs { margin-left: auto; } }
 
 /* ---------- hero ---------- */
-.hero { position: relative; min-height: 100svh; display: flex; flex-direction: column; overflow: hidden; isolation: isolate; }
+.hero { position: relative; display: flex; flex-direction: column; overflow: hidden; isolation: isolate; }
 .hero::before { /* taillight glow */
   content: ''; position: absolute; z-index: -2; width: 90vmax; height: 90vmax; right: -38vmax; bottom: -52vmax;
   background: radial-gradient(closest-side, rgba(255, 108, 34, 0.34), rgba(255, 108, 34, 0.08) 55%, transparent 72%);
