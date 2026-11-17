@@ -234,7 +234,7 @@ h2 { font: 400 clamp(36px, 5.4vw, 76px)/1.02 var(--display); letter-spacing: -0.
 .sh-head { display: flex; gap: 8px; align-items: center; padding: 2px 4px 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 6px; }
 .sh-head small, .add-card small { display: block; color: #8b8f96; margin-top: 2px; font-size: 8px; }
 .sh-row { display: flex; align-items: center; gap: 6px; padding: 9px 8px; border-radius: 9px; background: #2a2d32; margin-top: 5px; }
-.appic { width: 22px; height: 22px; border-radius: 6px; flex: none; background: #0e1013 url(img/app-icon.png) center / cover; display: inline-block; }
+.appic { width: 22px; height: 22px; border-radius: 6px; flex: none; background: #0e1013 url(img/app-icon-t.png) center / cover; display: inline-block; }
 .add-ui { position: absolute; inset: 0; background: #17191c; padding: 10px 8px; }
 .add-top { display: flex; justify-content: space-between; align-items: center; color: #4c9aff; margin-bottom: 16px; }
 .add-top b { padding: 4px 7px; border-radius: 7px; }
