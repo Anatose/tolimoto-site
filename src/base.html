@@ -19,7 +19,7 @@
 <meta property="og:locale" content="{{ L.og }}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="{{ R }}assets/fonts/dela-gothic-one-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{{ R }}assets/style.css">
+<link rel="stylesheet" href="{{ R }}assets/style.css?v={{ v.css }}">
 <script>document.documentElement.classList.add('js')</script>
 {% if page == 'index.html' and lang == 'en' %}<script>
   // first visit to the English home page: go to the visitor's language if the site has it
@@ -68,6 +68,6 @@
     <div class="copy"><span>© 2026 Tolimoto</span><span>{{ t.footer_nocookies }}</span></div>
   </div>
 </footer>
-<script src="{{ R }}assets/site.js" defer></script>
+<script src="{{ R }}assets/site.js?v={{ v.js }}" defer></script>
 </body>
 </html>

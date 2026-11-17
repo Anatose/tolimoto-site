@@ -129,12 +129,12 @@
         </div>
         <ol class="steps" id="steps-ios" role="tabpanel" aria-labelledby="tab-ios">
           {% for k in ['ios-open', 'ios-share', 'ios-sheet', 'ios-add', 'ios-home'] %}
-          <li class="rv"><button type="button" class="zoom" aria-label="{{ t.shot_open }}: {{ t[('ios%d_t' if k.startswith('ios') else 'and%d_t') % loop.index] }}">{{ scr(k) }}<span class="zoom-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5M10.5 8v5M8 10.5h5"/></svg></span></button><div class="st-txt"><b>{{ loop.index }}. {{ t['ios%d_t' % loop.index] }}</b><span>{{ t['ios%d_d' % loop.index] }}</span></div></li>
+          <li class="rv"><button type="button" class="zoom" aria-label="{{ t.shot_open }}: {{ t[('ios%d_t' if k.startswith('ios') else 'and%d_t') % loop.index] }}">{{ scr(k) }}</button><div class="st-txt"><b>{{ loop.index }}. {{ t['ios%d_t' % loop.index] }}</b><span>{{ t['ios%d_d' % loop.index] }}</span></div></li>
           {% endfor %}
         </ol>
         <ol class="steps" id="steps-and" role="tabpanel" aria-labelledby="tab-and" hidden>
           {% for k in ['and-open', 'and-menu', 'and-list', 'and-dialog', 'and-home'] %}
-          <li class="rv"><button type="button" class="zoom" aria-label="{{ t.shot_open }}: {{ t[('ios%d_t' if k.startswith('ios') else 'and%d_t') % loop.index] }}">{{ scr(k) }}<span class="zoom-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6"/><path d="m15 15 5 5M10.5 8v5M8 10.5h5"/></svg></span></button><div class="st-txt"><b>{{ loop.index }}. {{ t['and%d_t' % loop.index] }}</b><span>{{ t['and%d_d' % loop.index] }}</span></div></li>
+          <li class="rv"><button type="button" class="zoom" aria-label="{{ t.shot_open }}: {{ t[('ios%d_t' if k.startswith('ios') else 'and%d_t') % loop.index] }}">{{ scr(k) }}</button><div class="st-txt"><b>{{ loop.index }}. {{ t['and%d_t' % loop.index] }}</b><span>{{ t['and%d_d' % loop.index] }}</span></div></li>
           {% endfor %}
         </ol>
         <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="{{ t.inst_title }}" hidden>

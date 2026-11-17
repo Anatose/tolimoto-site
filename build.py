@@ -6,6 +6,7 @@
 Texts live in src/i18n/<lang>.json (keys missing there fall back to English),
 privacy policy bodies in src/privacy/<lang>.html.
 """
+import hashlib
 import json
 import pathlib
 
@@ -53,6 +54,8 @@ def texts(code):
 def main():
     env = Environment(loader=FileSystemLoader(SRC), undefined=StrictUndefined, autoescape=True)
     codes = [l['code'] for l in LANGS]
+    # file hashes in the links, so browsers fetch new CSS/JS right after a change
+    v = {k: hashlib.sha1((OUT / 'assets' / f).read_bytes()).hexdigest()[:8] for k, f in [('css', 'style.css'), ('js', 'site.js')]}
     for L in LANGS:
         code = L['code']
         R = '' if code == 'en' else '../'
@@ -66,7 +69,7 @@ def main():
             return SITE + ('' if to == 'en' else to + '/') + ('' if page == 'index.html' else page)
 
         for page in PAGES:
-            ctx = dict(lang=code, L=L, langs=LANGS, lang_codes=codes, t=t, R=R, page=page, link=link, abs=abs_url,
+            ctx = dict(v=v, lang=code, L=L, langs=LANGS, lang_codes=codes, t=t, R=R, page=page, link=link, abs=abs_url,
                        shots='ru' if code == 'ru' else 'en', sheets=SHEETS, sheet_lang=code if code in SHEETS else 'en')
             if page == 'privacy.html':
                 ctx['body'] = Markup((SRC / 'privacy' / f'{code}.html').read_text('utf-8'))
