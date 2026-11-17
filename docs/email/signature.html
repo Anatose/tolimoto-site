@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Подпись для почты — Tolimoto</title>
+<style>
+  body { margin: 0; background: #f2f1ee; color: #1d1d1b; font: 16px/1.5 -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  main { max-width: 760px; margin: 40px auto; padding: 0 20px; }
+  h1 { font-size: 26px; margin: 0 0 8px; }
+  .muted { color: #6b6760; }
+  .card { background: #fff; border-radius: 14px; padding: 26px 28px; margin: 22px 0 10px; box-shadow: 0 10px 30px -18px rgba(0,0,0,.35); }
+  .card h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #8a857c; margin: 0 0 18px; }
+  button { font: 600 15px/1 inherit; padding: 12px 18px; border-radius: 99px; border: 0; background: #1d1d1b; color: #fff; cursor: pointer; }
+  button.ok { background: #1e7a3c; }
+  ol { padding-left: 1.2em; } li { margin: 6px 0; }
+  code { background: #e9e6df; padding: 1px 6px; border-radius: 5px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Подпись для contact@tolimoto.com</h1>
+  <p class="muted">Нажмите «Скопировать подпись» и вставьте её в Gmail: Настройки → Все настройки → Общие → Подпись → Создать. Картинка логотипа загружается с tolimoto.com, поэтому её видят все получатели.</p>
+
+  <div class="card">
+    <h2>Русская</h2>
+    <div id="sig-ru"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#1d1d1b;"><tr>
+      <td style="padding:0 16px 0 0;vertical-align:middle;"><a href="https://tolimoto.com/ru/" style="text-decoration:none;"><img src="https://tolimoto.com/assets/email/logo.png" width="120" height="45" alt="Tolimoto" style="display:block;border:0;width:120px;height:45px;"></a></td>
+      <td style="padding:0 0 0 16px;border-left:2px solid #ff6c22;vertical-align:middle;font-size:13px;line-height:19px;">
+        <b style="font-size:15px;">Anatoli Sergejev</b><br>
+        <span style="color:#6b6760;">Tolimoto — мото-канал и приложение Tolimoto Log</span><br>
+        <a href="https://tolimoto.com/ru/" style="color:#d9520f;text-decoration:none;">tolimoto.com</a>
+        <span style="color:#c7c2b8;">&nbsp;·&nbsp;</span><a href="https://www.youtube.com/@tolimoto" style="color:#d9520f;text-decoration:none;">YouTube</a>
+        <span style="color:#c7c2b8;">&nbsp;·&nbsp;</span><a href="https://t.me/tolimoto" style="color:#d9520f;text-decoration:none;">Telegram</a>
+        <span style="color:#c7c2b8;">&nbsp;·&nbsp;</span><a href="https://app.tolimoto.com/" style="color:#d9520f;text-decoration:none;">Tolimoto Log</a>
+      </td></tr></table></div>
+    <p><button type="button" data-copy="sig-ru">Скопировать подпись</button></p>
+  </div>
+
+  <div class="card">
+    <h2>English</h2>
+    <div id="sig-en"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#1d1d1b;"><tr>
+      <td style="padding:0 16px 0 0;vertical-align:middle;"><a href="https://tolimoto.com/" style="text-decoration:none;"><img src="https://tolimoto.com/assets/email/logo.png" width="120" height="45" alt="Tolimoto" style="display:block;border:0;width:120px;height:45px;"></a></td>
+      <td style="padding:0 0 0 16px;border-left:2px solid #ff6c22;vertical-align:middle;font-size:13px;line-height:19px;">
+        <b style="font-size:15px;">Anatoli Sergejev</b><br>
+        <span style="color:#6b6760;">Tolimoto — motorcycle channel and the Tolimoto Log app</span><br>
+        <a href="https://tolimoto.com/" style="color:#d9520f;text-decoration:none;">tolimoto.com</a>
+        <span style="color:#c7c2b8;">&nbsp;·&nbsp;</span><a href="https://www.youtube.com/@tolimoto" style="color:#d9520f;text-decoration:none;">YouTube</a>
+        <span style="color:#c7c2b8;">&nbsp;·&nbsp;</span><a href="https://t.me/tolimoto" style="color:#d9520f;text-decoration:none;">Telegram</a>
+        <span style="color:#c7c2b8;">&nbsp;·&nbsp;</span><a href="https://app.tolimoto.com/" style="color:#d9520f;text-decoration:none;">Tolimoto Log</a>
+      </td></tr></table></div>
+    <p><button type="button" data-copy="sig-en">Copy signature</button></p>
+  </div>
+
+  <h2 style="font-size:18px;margin-top:34px">Как поставить в Gmail</h2>
+  <ol>
+    <li>Gmail → шестерёнка → <b>Все настройки</b> → вкладка <b>Общие</b> → раздел <b>Подпись</b> → <b>Создать</b>, назовите «Tolimoto».</li>
+    <li>Вставьте скопированную подпись в поле (Cmd+V).</li>
+    <li>Ниже, в «Настройки подписи по умолчанию», выберите адрес <code>contact@tolimoto.com</code> и подпись «Tolimoto» для новых писем и для ответов.</li>
+    <li>Внизу страницы нажмите <b>Сохранить изменения</b>.</li>
+  </ol>
+</main>
+<script>
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById(b.getAttribute('data-copy'))
+      var r = document.createRange(); r.selectNode(el)
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r)
+      var ok = false; try { ok = document.execCommand('copy') } catch (e) {}
+      s.removeAllRanges()
+      var t = b.textContent; b.textContent = ok ? '✓' : 'Выделите подпись и нажмите Cmd+C'; b.classList.toggle('ok', ok)
+      setTimeout(function () { b.textContent = t; b.classList.remove('ok') }, 2500)
+    })
+  })
+</script>
+</body>
+</html>
