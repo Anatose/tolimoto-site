@@ -129,5 +129,18 @@
   "ios6_d": "From now on, start the app from its icon, not from Safari.",
   "ui_share": "Share",
   "ui_find": "Find on Page",
-  "ui_reader": "Show Reader"
+  "ui_reader": "Show Reader",
+  "beta_title": "Become a tester",
+  "beta_lead": "Leave your email and we’ll send you the app link and a short guide. In return we ask one thing: tell us what feels awkward and what breaks.",
+  "beta_ph": "you@email.com",
+  "beta_btn": "I want to test",
+  "beta_consent": "I agree to receive emails about testing Tolimoto Log. I can unsubscribe at any time.",
+  "beta_privacy": "How we keep your address",
+  "beta_wait": "Sending…",
+  "beta_new": "Done! The email with the link is on its way. If you don’t see it, check Spam or Promotions.",
+  "beta_exists": "This address is already on the testers list — thank you! The app: app.tolimoto.com",
+  "beta_invalid": "Please check the email address.",
+  "beta_needconsent": "Please tick the consent box so we can write to you.",
+  "beta_error": "Couldn’t send it. Try again or write to contact@tolimoto.com.",
+  "beta_limit": "Too many sign-ups today — please try tomorrow or write to contact@tolimoto.com."
 }

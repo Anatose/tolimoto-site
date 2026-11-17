@@ -129,5 +129,18 @@
   "ios6_d": "Toliau programėlę paleiskite iš piktogramos, o ne iš Safari.",
   "ui_share": "Bendrinti",
   "ui_find": "Ieškoti puslapyje",
-  "ui_reader": "Rodyti skaitytuvą"
+  "ui_reader": "Rodyti skaitytuvą",
+  "beta_title": "Tapkite testuotoju",
+  "beta_lead": "Palikite el. paštą — atsiųsime nuorodą į programėlę ir trumpą instrukciją. Mainais prašome vieno: papasakokite, kas nepatogu ir kas sugenda.",
+  "beta_ph": "jusu@pastas.lt",
+  "beta_btn": "Noriu testuoti",
+  "beta_consent": "Sutinku gauti laiškus apie Tolimoto Log testavimą. Atsisakyti galima bet kada.",
+  "beta_privacy": "Kaip saugome adresą",
+  "beta_wait": "Siunčiame…",
+  "beta_new": "Atlikta! Laiškas su nuoroda jau keliauja. Jei jo nematote, pažiūrėkite į „Šlamštą“ arba „Akcijas“.",
+  "beta_exists": "Šis adresas jau yra testuotojų sąraše — ačiū! Programėlė: app.tolimoto.com",
+  "beta_invalid": "Patikrinkite el. pašto adresą.",
+  "beta_needconsent": "Pažymėkite sutikimą, kad galėtume jums parašyti.",
+  "beta_error": "Nepavyko išsiųsti. Bandykite dar kartą arba rašykite contact@tolimoto.com.",
+  "beta_limit": "Šiandien paraiškų per daug — bandykite rytoj arba rašykite contact@tolimoto.com."
 }

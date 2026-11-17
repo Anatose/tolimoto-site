@@ -333,6 +333,30 @@ footer { border-top: 1px solid var(--line); padding: 70px 0 40px; overflow: hidd
 .hw.key .mono, .hw.key i { color: var(--amber); }
 @media (max-width: 860px) { .howto { grid-template-columns: 1fr; } }
 
+/* ---------- beta sign-up ---------- */
+.beta { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(24px, 4vw, 56px); align-items: center; margin-top: 16px; padding: clamp(26px, 3.4vw, 44px); border-radius: 26px; background: linear-gradient(135deg, rgba(255, 108, 34, 0.13), rgba(255, 108, 34, 0.025) 60%), var(--ink-2); border: 1px solid rgba(255, 108, 34, 0.38); scroll-margin-top: 100px; }
+.beta .tag { display: inline-block; font: 500 12px/1 var(--mono); letter-spacing: 0.08em; padding: 7px 10px; border-radius: 99px; border: 1px solid rgba(255, 108, 34, 0.55); color: var(--signal); }
+.beta h3 { margin: 16px 0 10px; font: 400 clamp(28px, 3vw, 40px)/1.05 var(--display); }
+.beta-txt p { margin: 0; color: #cfcac1; }
+.beta-row { display: flex; gap: 10px; }
+.beta-row input { flex: 1; min-width: 0; font: 500 17px/1 var(--text); color: var(--paper); background: var(--ink); border: 1px solid rgba(237, 232, 223, 0.22); border-radius: 99px; padding: 16px 22px; transition: border-color 0.2s; }
+.beta-row input::placeholder { color: #6f6b64; }
+.beta-row input:focus { outline: none; border-color: var(--signal); }
+.beta-row .btn { flex: none; cursor: pointer; }
+.beta-row .btn[disabled] { opacity: 0.6; cursor: progress; transform: none; }
+.beta-ok { display: flex; gap: 12px; align-items: flex-start; margin-top: 16px; font-size: 14px; color: var(--muted); cursor: pointer; }
+.beta-ok input { flex: none; width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--signal); cursor: pointer; }
+.beta-ok a { color: var(--paper); }
+.beta-msg { margin: 14px 0 0; min-height: 1.5em; font-size: 15px; color: var(--muted); }
+.beta-msg.ok { color: var(--green); }
+.beta-msg.bad { color: var(--amber); }
+.beta-form.done .beta-row, .beta-form.done .beta-ok { display: none; }
+.beta-form.done .beta-msg { margin: 0; font-size: 18px; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+@media (max-width: 860px) { .beta { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .beta-row { flex-direction: column; } .beta-row .btn { justify-content: center; } }
+
+
 /* guide page */
 .guide { padding: calc(64px + 60px) 0 100px; }
 .g-head { max-width: 46em; margin-bottom: 50px; }

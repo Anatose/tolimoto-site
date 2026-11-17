@@ -129,5 +129,18 @@
   "ios6_d": "Turpmāk palaidiet lietotni no ikonas, nevis no Safari.",
   "ui_share": "Kopīgot",
   "ui_find": "Meklēt lapā",
-  "ui_reader": "Rādīt lasītāju"
+  "ui_reader": "Rādīt lasītāju",
+  "beta_title": "Kļūt par testētāju",
+  "beta_lead": "Atstājiet e-pastu — atsūtīsim saiti uz lietotni un īsu instrukciju. Pretī lūgsim tikai vienu: pastāstiet, kas ir neērti un kas salūzt.",
+  "beta_ph": "jusu@epasts.lv",
+  "beta_btn": "Gribu testēt",
+  "beta_consent": "Piekrītu saņemt e-pastus par Tolimoto Log testēšanu. Atteikties var jebkurā laikā.",
+  "beta_privacy": "Kā mēs glabājam adresi",
+  "beta_wait": "Sūtām…",
+  "beta_new": "Gatavs! Vēstule ar saiti jau ceļā. Ja to neredzat, ieskatieties mapē “Mēstules” vai “Akcijas”.",
+  "beta_exists": "Šī adrese jau ir testētāju sarakstā — paldies! Lietotne: app.tolimoto.com",
+  "beta_invalid": "Pārbaudiet e-pasta adresi.",
+  "beta_needconsent": "Atzīmējiet piekrišanu, lai mēs varētu jums rakstīt.",
+  "beta_error": "Neizdevās nosūtīt. Mēģiniet vēlreiz vai rakstiet uz contact@tolimoto.com.",
+  "beta_limit": "Šodien pieteikumu ir par daudz — mēģiniet rīt vai rakstiet uz contact@tolimoto.com."
 }

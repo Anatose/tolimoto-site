@@ -29,6 +29,8 @@ LANGS = [
     {'code': 'pl', 'name': 'Polski', 'og': 'pl_PL'},
 ]
 PAGES = ['index.html', 'guide.html', 'privacy.html']
+# tester sign-up form → Google Apps Script web app "Tolimoto signup" in the owner's Google account
+SIGNUP = 'https://script.google.com/macros/s/AKfycbxDDjnP9ldU4UNO-sU5wKKNm4kkfqzk5_5TzUdHszM-1uSoRDumiowvn0qimPP96SKjfA/exec'
 # free "Таблица ТО" templates on Google Drive (shared: anyone with the link can view and copy)
 SHEETS = {
     'ru': '1vLzkDTCo8svfaQh1OFcyItb7-uFBU4DDBavEcUBHORM',
@@ -71,7 +73,7 @@ def main():
 
         for page in PAGES:
             ctx = dict(v=v, lang=code, L=L, langs=LANGS, lang_codes=codes, t=t, R=R, page=page, link=link, abs=abs_url,
-                       shots='ru' if code == 'ru' else 'en', sheets=SHEETS, sheet_lang=code if code in SHEETS else 'en')
+                       shots='ru' if code == 'ru' else 'en', sheets=SHEETS, signup=SIGNUP, sheet_lang=code if code in SHEETS else 'en')
             if page == 'privacy.html':
                 ctx['body'] = Markup((SRC / 'privacy' / f'{code}.html').read_text('utf-8'))
             if page == 'guide.html':

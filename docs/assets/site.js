@@ -76,6 +76,27 @@
     secs.forEach(function (s) { tio.observe(s) })
   }
 
+  // beta sign-up form → Apps Script web app
+  var bf = document.querySelector('.beta-form')
+  if (bf) bf.addEventListener('submit', function (e) {
+    e.preventDefault()
+    var d = bf.dataset, msg = bf.querySelector('.beta-msg'), btn = bf.querySelector('button')
+    var email = bf.email.value.trim()
+    function say(text, cls) { msg.textContent = text; msg.className = 'beta-msg' + (cls ? ' ' + cls : '') }
+    if (!/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(email)) { say(d.invalid, 'bad'); bf.email.focus(); return }
+    if (!bf.consent.checked) { say(d.consent, 'bad'); return }
+    btn.disabled = true; say(d.wait)
+    var body = new URLSearchParams({ email: email, consent: '1', company: bf.company.value, lang: d.lang, page: location.pathname })
+    fetch(bf.action, { method: 'POST', body: body })
+      .then(function (r) { return r.json() })
+      .then(function (r) {
+        if (r.status === 'new' || r.status === 'exists') { bf.classList.add('done'); say(r.status === 'new' ? d.new : d.exists, 'ok'); return }
+        say(d[r.status] || d.error, 'bad')
+      })
+      .catch(function () { say(d.error, 'bad') })
+      .then(function () { btn.disabled = false })
+  })
+
   var bar = document.getElementById('bar')
   function onScroll() { if (bar && !bar.classList.contains('fixed-solid')) bar.classList.toggle('solid', window.scrollY > 20 || document.body.classList.contains('doc-page')) }
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll()
