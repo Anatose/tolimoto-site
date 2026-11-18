@@ -141,5 +141,11 @@
   "beta_invalid": "Please check the email address.",
   "beta_needconsent": "Please tick the consent box so we can write to you.",
   "beta_error": "Couldn’t send it. Try again or write to contact@tolimoto.com.",
-  "beta_limit": "Too many sign-ups today — please try tomorrow or write to contact@tolimoto.com."
+  "beta_limit": "Too many sign-ups today — please try tomorrow or write to contact@tolimoto.com.",
+  "free_tag": "0 €",
+  "free_title": "Free. For everyone. For good.",
+  "free_lead": "Tolimoto Log is free and will stay that way: no ads, no subscriptions, no paid features. We earn nothing from it — it is made out of pure enthusiasm, by riders for riders.",
+  "free_costs": "There are still a few costs, though: the domain and development tools. If the app has been useful and you would like to say thanks, buy us a litre of fuel. It is entirely optional and unlocks nothing — everything is already open to everyone.",
+  "free_btn": "Buy us a litre of fuel on Ko-fi",
+  "free_note": "This opens the Ko-fi page. Payment happens there — we never see your card details."
 }

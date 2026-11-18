@@ -141,5 +141,11 @@
   "beta_invalid": "Sprawdź adres e-mail.",
   "beta_needconsent": "Zaznacz zgodę, żebyśmy mogli do Ciebie napisać.",
   "beta_error": "Nie udało się wysłać. Spróbuj ponownie albo napisz na contact@tolimoto.com.",
-  "beta_limit": "Dziś jest zbyt wiele zgłoszeń — spróbuj jutro albo napisz na contact@tolimoto.com."
+  "beta_limit": "Dziś jest zbyt wiele zgłoszeń — spróbuj jutro albo napisz na contact@tolimoto.com.",
+  "free_tag": "0 €",
+  "free_title": "Za darmo. Dla wszystkich. Na zawsze.",
+  "free_lead": "Tolimoto Log jest darmowy i taki zostanie: bez reklam, subskrypcji i płatnych funkcji. Nic na nim nie zarabiamy — robimy go z czystego entuzjazmu, od motocyklistów dla motocyklistów.",
+  "free_costs": "Kilka kosztów jednak jest: domena i narzędzia programistyczne. Jeśli aplikacja Ci się przydała i chcesz podziękować — zatankuj nam litr paliwa. To dobrowolne i niczego nie odblokowuje: wszystko i tak jest dostępne dla wszystkich.",
+  "free_btn": "Zatankuj litr paliwa na Ko-fi",
+  "free_note": "Otworzy się strona Ko-fi. Płatność odbywa się tam — nie widzimy danych Twojej karty."
 }

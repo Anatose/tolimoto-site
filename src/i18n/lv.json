@@ -141,5 +141,11 @@
   "beta_invalid": "Pārbaudiet e-pasta adresi.",
   "beta_needconsent": "Atzīmējiet piekrišanu, lai mēs varētu jums rakstīt.",
   "beta_error": "Neizdevās nosūtīt. Mēģiniet vēlreiz vai rakstiet uz contact@tolimoto.com.",
-  "beta_limit": "Šodien pieteikumu ir par daudz — mēģiniet rīt vai rakstiet uz contact@tolimoto.com."
+  "beta_limit": "Šodien pieteikumu ir par daudz — mēģiniet rīt vai rakstiet uz contact@tolimoto.com.",
+  "free_tag": "0 €",
+  "free_title": "Bez maksas. Visiem. Uz visiem laikiem.",
+  "free_lead": "Tolimoto Log ir bez maksas un tāds arī paliks: bez reklāmām, abonementiem un maksas funkcijām. Mēs ar to neko nenopelnām — darām to aiz tīra entuziasma, no motociklistiem motociklistiem.",
+  "free_costs": "Tomēr daži izdevumi ir: domēns un izstrādes rīki. Ja lietotne jums noderēja un gribas pateikt paldies — ielejiet mums litru degvielas. Tas ir pēc vēlēšanās un neko neatver: viss jau tāpat ir pieejams visiem.",
+  "free_btn": "Ieliet litru degvielas Ko-fi",
+  "free_note": "Atvērsies Ko-fi lapa. Maksājums notiek tur — jūsu kartes datus mēs neredzam."
 }

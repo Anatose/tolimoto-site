@@ -141,5 +141,11 @@
   "beta_invalid": "Kontrolli e-posti aadressi.",
   "beta_needconsent": "Märgi nõusolek, et saaksime sulle kirjutada.",
   "beta_error": "Saatmine ebaõnnestus. Proovi uuesti või kirjuta aadressil contact@tolimoto.com.",
-  "beta_limit": "Täna on soovijaid liiga palju — proovi homme või kirjuta aadressil contact@tolimoto.com."
+  "beta_limit": "Täna on soovijaid liiga palju — proovi homme või kirjuta aadressil contact@tolimoto.com.",
+  "free_tag": "0 €",
+  "free_title": "Tasuta. Kõigile. Alatiseks.",
+  "free_lead": "Tolimoto Log on tasuta ja jääb selleks: ilma reklaamide, tellimuste ja tasuliste funktsioonideta. Me ei teeni sellega midagi — teeme seda puhtast entusiasmist, motomeestelt motomeestele.",
+  "free_costs": "Mõned kulud siiski on: domeen ja arendustööriistad. Kui rakendusest oli kasu ja tahad aitäh öelda, tangi meile liiter kütust. See on vabatahtlik ega ava midagi lisaks — kõik on niigi kõigile avatud.",
+  "free_btn": "Tangi liiter kütust Ko-fis",
+  "free_note": "Avaneb Ko-fi leht. Makse toimub seal — sinu kaardiandmeid me ei näe."
 }

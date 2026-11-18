@@ -90,6 +90,19 @@
         <a class="hw" href="{{ link(lang, 'guide.html') }}#start"><span class="mono">02</span><b>{{ t.hw2_t }}</b><span>{{ t.hw2_d }}</span><i aria-hidden="true">→</i></a>
         <a class="hw key" href="{{ link(lang, 'guide.html') }}#data"><span class="mono">03</span><b>{{ t.hw3_t }}</b><span>{{ t.hw3_d }}</span><i aria-hidden="true">→</i></a>
       </div>
+
+      <div class="beta free rv" id="support">
+        <div class="beta-txt">
+          <span class="tag">{{ t.free_tag }}</span>
+          <h3>{{ t.free_title }}</h3>
+          <p>{{ t.free_lead }}</p>
+        </div>
+        <div class="free-side">
+          <p>{{ t.free_costs }}</p>
+          {% if kofi %}<a class="btn hot" href="{{ kofi }}" target="_blank" rel="noopener">⛽ {{ t.free_btn }}</a>
+          <p class="free-note">{{ t.free_note }}</p>{% endif %}
+        </div>
+      </div>
     </div>
   </section>
 
