@@ -68,7 +68,7 @@
           <figure class="phone p1"><div class="scr"><img src="{{ R }}assets/img/{{ shots }}-home.webp" alt="{{ t.alt_home }}" width="780" height="1688" loading="lazy"></div></figure>
         </div>
         <div>
-          <h2 class="rv">Tolimoto Log<span class="tag">BETA</span></h2>
+          <h2 class="rv">Tolimoto Log</h2>
           <p class="lead rv">{{ t.app_lead }}</p>
           <ul class="feats rv">
             {% for i in range(1, 7) %}<li><b>{{ t['f%d_t' % i] }}</b><span>{{ t['f%d_d' % i] }}</span></li>
@@ -89,25 +89,6 @@
         <a class="hw" href="{{ link(lang, 'guide.html') }}#install"><span class="mono">01</span><b>{{ t.hw1_t }}</b><span>{{ t.hw1_d }}</span><i aria-hidden="true">→</i></a>
         <a class="hw" href="{{ link(lang, 'guide.html') }}#start"><span class="mono">02</span><b>{{ t.hw2_t }}</b><span>{{ t.hw2_d }}</span><i aria-hidden="true">→</i></a>
         <a class="hw key" href="{{ link(lang, 'guide.html') }}#data"><span class="mono">03</span><b>{{ t.hw3_t }}</b><span>{{ t.hw3_d }}</span><i aria-hidden="true">→</i></a>
-      </div>
-
-      <div class="beta rv" id="beta">
-        <div class="beta-txt">
-          <span class="tag">BETA</span>
-          <h3>{{ t.beta_title }}</h3>
-          <p>{{ t.beta_lead }}</p>
-        </div>
-        <form class="beta-form" action="{{ signup }}" method="post" novalidate data-lang="{{ lang }}"
-              data-wait="{{ t.beta_wait }}" data-new="{{ t.beta_new }}" data-exists="{{ t.beta_exists }}" data-invalid="{{ t.beta_invalid }}"
-              data-consent="{{ t.beta_needconsent }}" data-error="{{ t.beta_error }}" data-limit="{{ t.beta_limit }}">
-          <div class="beta-row">
-            <input type="email" name="email" required maxlength="120" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" placeholder="{{ t.beta_ph }}" aria-label="Email">
-            <button class="btn hot" type="submit">{{ t.beta_btn }}</button>
-          </div>
-          <div class="hp" aria-hidden="true"><input type="text" name="company" tabindex="-1" autocomplete="off"></div>
-          <label class="beta-ok"><input type="checkbox" name="consent" value="1"><span>{{ t.beta_consent }} <a href="{{ link(lang, 'privacy.html') }}#testers">{{ t.beta_privacy }}</a></span></label>
-          <p class="beta-msg" role="status" aria-live="polite"></p>
-        </form>
       </div>
     </div>
   </section>
