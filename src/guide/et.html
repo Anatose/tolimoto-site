@@ -24,6 +24,8 @@
     <li><b>Päevik</b> — kõik kirjed ühes loendis: otsing teksti ja tootekoodide järgi, filtrid tööde, tankimiste ja kulude kaupa, kuupäevavahemik. Igal tankimisel on oma kütusekulu: roheline, kui see on keskmisest märgatavalt väiksem, punane, kui palju suurem.</li>
     <li><b>Statistika</b> — kulud aastate kaupa (hooldus ja remont, tarvikud, kütus, kindlustus ja muu), kilomeetri hind, keskmine kütusekulu ja graafikud. Puuduta rida — näed, millest see koosneb.</li>
     <li><b>Kulud</b> — kindlustus, ülevaatus, maks ja kõik muu, nupu „+” kaudu.</li>
+    <li><b>Kulud perioodi kohta.</b> Määra päevikus kuupäevad „Alates” ja „Kuni” — loendi kohale ilmub selle perioodi summa koos jaotusega: hooldus ja remont, tarvikud, kütus, muu.</li>
+    <li><b>Arvutis</b> on päevik veergudega tabel: kuupäev, läbisõit, tüüp, kirje, kütusekulu ja summa. Sorteerimiseks klõpsa pealkirjal „Kuupäev”, „Läbisõit” või „Summa”.</li>
   </ul>
 </section>
 
@@ -43,13 +45,51 @@
     <li>Sünkroonimine käib ise: rakenduse avamisel, pärast iga muudatust ja kui võrk taastub. Kirjeid saab muuta ka tabelis — muudatused jõuavad rakendusse tagasi.</li>
     <li>Vahelehe „Summary” (kokkuvõte: hooldusgraafik, praegune läbisõit, kulud aastate kaupa) koostab rakendus. Andmeid muuda teistel vahelehtedel.</li>
     <li>Rakendus näeb ainult faile, mille ta ise lõi. Lähemalt <a href="{{PRIVACY}}">privaatsuspoliitikas</a>.</li>
+    <li><b>Telefon ja arvuti.</b> Logi mõlemas sisse samasse Google’i kontosse — kirjed on ühised. Ühes seadmes tehtud muudatused jõuavad teise järgmisel sünkroonimisel: rakenduse avamisel või nupuga „Sünkrooni kohe” seadetes.</li>
   </ul>
+  <p class="g-warn"><b>Sünkroonimine töötab ainult ühe Google’i konto piires.</b> Telefonis, arvutis ja igas teises seadmes logi sisse samasse kontosse. Teise kontoga loob rakendus eraldi tabeli — ja eri seadmete kirjed ei kohtu.</p>
   <p class="g-note">Beeta ajal on Google'iga sisselogimine avatud ainult testijatele. Teistele — varukoopiad (allpool).</p>
+</section>
+
+<section id="desktop">
+  <h2>Arvutis</h2>
+  <p>Tolimoto Log töötab ka arvutis — otse brauseris. Mugav, kui on vaja tšekke sorteerida, vanu kirjeid sisestada või statistikat suurel ekraanil vaadata.</p>
+  <ol class="g-steps">
+    <li><b>Ava <a href="https://app.tolimoto.com/">app.tolimoto.com</a></b> Chrome’is, Edge’is, Safaris või Firefoxis. Esimesel ekraanil vajuta „Jätka brauseris”.</li>
+    <li><b>Ühenda Google</b> — <b>sama konto, mis telefonis</b>. Rakendus leiab sinu tabeli ja kõik telefoni kirjed ilmuvad arvutisse.</li>
+    <li><b>Paigaldamine pole kohustuslik.</b> Chrome’is ja Edge’is: paigaldusikoon aadressiriba paremas servas. Safaris Macis: menüü „File” → „Add to Dock”. Rakendus avaneb eraldi aknas.</li>
+  </ol>
+  <ul>
+    <li><b>Menüü vasakul:</b> „Lisa kirje”, vahekaardid Garaaž, Päevik, Hooldus, Statistika ja all „Seaded”.</li>
+    <li><b>Vormid</b> avanevad aknana ekraani keskel. Sulge Esc-klahvi või ristiga.</li>
+    <li><b>Mitu sõidukit:</b> vaheta sõidukit punktidega kaardi all „Garaažis”.</li>
+    <li>Ilma Google’ita on arvuti kirjed telefonist eraldi ja ainult selles brauseris.</li>
+  </ul>
+</section>
+
+<section id="keys">
+  <h2>Kiirklahvid</h2>
+  <p>Arvutis saab peaaegu kõike teha klaviatuurilt. Klahvid töötavad iga klaviatuuripaigutusega ega sega, kui kirjutad välja.</p>
+  <table class="g-keys">
+    <tbody>
+      <tr><td><kbd>N</kbd></td><td>menüü „Lisa kirje”</td></tr>
+      <tr><td><kbd>F</kbd></td><td>tankimine</td></tr>
+      <tr><td><kbd>S</kbd></td><td>töö</td></tr>
+      <tr><td><kbd>E</kbd></td><td>kulu</td></tr>
+      <tr><td><kbd>O</kbd></td><td>läbisõit</td></tr>
+      <tr><td><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd></td><td>vahekaardid: Garaaž, Päevik, Hooldus, Statistika</td></tr>
+      <tr><td><kbd>/</kbd></td><td>otsing päevikus</td></tr>
+      <tr><td><kbd>Ctrl</kbd> + <kbd>Enter</kbd></td><td>salvesta avatud vorm (Macis ⌘ + Enter)</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>sulge aken</td></tr>
+      <tr><td><kbd>Enter</kbd></td><td>ava päeviku valitud rida (ridade vahel liigu Tab-klahviga)</td></tr>
+    </tbody>
+  </table>
+  <p class="g-note">Vihjed on rakenduses endas: vasaku menüü nuppudel, menüüs „Lisa kirje” ja „Seadetes”.</p>
 </section>
 
 <section id="data" class="g-key">
   <h2>Kuidas andmeid mitte kaotada</h2>
-  <p class="g-lead">Ilma Google'ita on sinu kirjed <b>ainult rakenduses selles telefonis</b>. Telefon kadus või läks katki, rakendus kustutati — kirjed on läinud. Vali üks kahest viisist ja seadista see täna.</p>
+  <p class="g-lead">Ilma Google'ita on sinu kirjed <b>ainult rakenduses selles seadmes</b>. Telefon kadus või läks katki, rakendus kustutati — kirjed on läinud. Vali üks kahest viisist ja seadista see täna.</p>
   <div class="g-two">
     <div class="g-card">
       <span class="mono">1 · soovitame</span>
@@ -80,6 +120,8 @@
   <details><summary>Kas Tolimoto näeb minu kirjeid?</summary><p>Ei. Tolimotol pole serverit: andmed jäävad sinu telefoni ja ühendamisel sinu enda Google Drive'i.</p></details>
   <details><summary>Kas töötab ilma internetita?</summary><p>Jah. Kõik töötab ilma võrguta; Google'iga sünkroonimine jõuab järele, kui võrk taastub.</p></details>
   <details><summary>Kas saab pidada mitut mootorratast ja autot?</summary><p>Jah, nii palju kui soovid. Igaühel on oma hooldusgraafik, päevik ja statistika.</p></details>
+  <details><summary>Kas saab kasutada arvutis?</summary><p>Jah. Ava app.tolimoto.com arvuti brauseris ja ühenda Google — sama konto, mis telefonis. Täpsemalt jaotises „Arvutis”.</p></details>
+  <details><summary>Arvutis ei ole telefoni kirjeid näha</summary><p>Kontrolli, et mõlemas seadmes oleks sisse logitud samasse Google’i kontosse (see on näha seadetes). Kui konto on sama, vajuta „Sünkrooni kohe” telefonis ja seejärel arvutis.</p></details>
   <details><summary>Aga Android?</summary><p>Rakendus töötab Androidis Chrome'is ja paigaldub selle menüüst. See on tehtud ja testitud eelkõige iPhone'i jaoks — kui midagi on valesti, <a href="mailto:contact@tolimoto.com">kirjuta meile</a>.</p></details>
   <details><summary>Kus küsida või veast teatada?</summary><p><a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a> või <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>.</p></details>
 </section>

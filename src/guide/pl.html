@@ -24,6 +24,8 @@
     <li><b>Dziennik</b> — wszystkie wpisy na jednej liście: wyszukiwanie po tekście i numerach części, filtry serwisu, tankowań i wydatków, zakres dat. Każde tankowanie ma swoje spalanie: zielone, gdy wyraźnie poniżej średniej, czerwone — gdy znacznie powyżej.</li>
     <li><b>Statystyki</b> — wydatki w podziale na lata (serwis i naprawy, akcesoria, paliwo, ubezpieczenie i inne), koszt kilometra, średnie spalanie i wykresy. Stuknij wiersz — zobaczysz, z czego się składa.</li>
     <li><b>Wydatki</b> — ubezpieczenie, przegląd, podatek i wszystko inne, przyciskiem „+”.</li>
+    <li><b>Wydatki w okresie.</b> Ustaw w dzienniku daty „Od” i „Do” — nad listą pojawi się suma za ten okres z podziałem: serwis i naprawy, akcesoria, paliwo, inne.</li>
+    <li><b>Na komputerze</b> dziennik to tabela z kolumnami: data, przebieg, typ, wpis, spalanie i kwota. Kliknij nagłówek „Data”, „Przebieg” lub „Kwota”, aby posortować.</li>
   </ul>
 </section>
 
@@ -43,13 +45,51 @@
     <li>Synchronizacja działa sama: przy otwarciu aplikacji, po każdej zmianie i gdy wraca sieć. Wpisy możesz też edytować w arkuszu — zmiany wrócą do aplikacji.</li>
     <li>Kartę „Summary” (podsumowanie: przeglądy, obecny przebieg, wydatki w podziale na lata) tworzy aplikacja. Dane edytuj na pozostałych kartach.</li>
     <li>Aplikacja widzi tylko pliki, które sama utworzyła. Więcej w <a href="{{PRIVACY}}">polityce prywatności</a>.</li>
+    <li><b>Telefon i komputer.</b> Zaloguj się na obu do tego samego konta Google — wpisy będą wspólne. Zmiany z jednego urządzenia trafiają na drugie przy następnej synchronizacji: po otwarciu aplikacji albo przyciskiem „Synchronizuj teraz” w ustawieniach.</li>
   </ul>
+  <p class="g-warn"><b>Synchronizacja działa tylko w obrębie jednego konta Google.</b> Na telefonie, komputerze i każdym innym urządzeniu loguj się do tego samego konta. Na innym koncie aplikacja utworzy osobny arkusz — i wpisy z różnych urządzeń się nie spotkają.</p>
   <p class="g-note">W czasie bety logowanie przez Google jest otwarte tylko dla testerów. Pozostałym — kopie zapasowe (niżej).</p>
+</section>
+
+<section id="desktop">
+  <h2>Na komputerze</h2>
+  <p>Tolimoto Log działa też na komputerze — po prostu w przeglądarce. Wygodnie, gdy trzeba uporządkować paragony, wpisać stare wpisy albo obejrzeć statystyki na dużym ekranie.</p>
+  <ol class="g-steps">
+    <li><b>Otwórz <a href="https://app.tolimoto.com/">app.tolimoto.com</a></b> w Chrome, Edge, Safari lub Firefoksie. Na pierwszym ekranie wybierz „Kontynuuj w przeglądarce”.</li>
+    <li><b>Połącz Google</b> — <b>to samo konto co na telefonie</b>. Aplikacja znajdzie Twój arkusz i wszystkie wpisy z telefonu pojawią się na komputerze.</li>
+    <li><b>Instalacja nie jest konieczna.</b> W Chrome i Edge: ikona instalacji po prawej stronie paska adresu. W Safari na Macu: menu „Plik” → „Dodaj do Docka”. Aplikacja otworzy się we własnym oknie.</li>
+  </ol>
+  <ul>
+    <li><b>Menu po lewej:</b> „Dodaj wpis”, karty Garaż, Dziennik, Przeglądy, Statystyki i na dole „Ustawienia”.</li>
+    <li><b>Formularze</b> otwierają się jako okno na środku ekranu. Zamknij klawiszem Esc lub krzyżykiem.</li>
+    <li><b>Kilka pojazdów:</b> przełączaj kropkami pod kartą w „Garażu”.</li>
+    <li>Bez Google wpisy na komputerze są osobne od telefonu i zostają tylko w tej przeglądarce.</li>
+  </ul>
+</section>
+
+<section id="keys">
+  <h2>Skróty klawiszowe</h2>
+  <p>Na komputerze prawie wszystko zrobisz z klawiatury. Skróty działają przy każdym układzie klawiatury i nie przeszkadzają, gdy piszesz w polu.</p>
+  <table class="g-keys">
+    <tbody>
+      <tr><td><kbd>N</kbd></td><td>menu „Dodaj wpis”</td></tr>
+      <tr><td><kbd>F</kbd></td><td>tankowanie</td></tr>
+      <tr><td><kbd>S</kbd></td><td>serwis</td></tr>
+      <tr><td><kbd>E</kbd></td><td>wydatek</td></tr>
+      <tr><td><kbd>O</kbd></td><td>przebieg</td></tr>
+      <tr><td><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd></td><td>karty: Garaż, Dziennik, Przeglądy, Statystyki</td></tr>
+      <tr><td><kbd>/</kbd></td><td>szukaj w dzienniku</td></tr>
+      <tr><td><kbd>Ctrl</kbd> + <kbd>Enter</kbd></td><td>zapisz otwarty formularz (na Macu ⌘ + Enter)</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>zamknij okno</td></tr>
+      <tr><td><kbd>Enter</kbd></td><td>otwórz wybrany wiersz dziennika (między wierszami — Tab)</td></tr>
+    </tbody>
+  </table>
+  <p class="g-note">Podpowiedzi są w samej aplikacji: na przyciskach menu po lewej, w menu „Dodaj wpis” i w „Ustawieniach”.</p>
 </section>
 
 <section id="data" class="g-key">
   <h2>Jak nie stracić danych</h2>
-  <p class="g-lead">Bez Google Twoje wpisy żyją <b>tylko w aplikacji na tym telefonie</b>. Zgubiony lub zepsuty telefon, usunięta aplikacja — wpisy przepadają. Wybierz jeden z dwóch sposobów i ustaw go dziś.</p>
+  <p class="g-lead">Bez Google Twoje wpisy żyją <b>tylko w aplikacji na tym urządzeniu</b>. Zgubiony lub zepsuty telefon, usunięta aplikacja — wpisy przepadają. Wybierz jeden z dwóch sposobów i ustaw go dziś.</p>
   <div class="g-two">
     <div class="g-card">
       <span class="mono">1 · polecamy</span>
@@ -80,6 +120,8 @@
   <details><summary>Czy Tolimoto widzi moje wpisy?</summary><p>Nie. Tolimoto nie ma serwera: dane zostają na Twoim telefonie i, jeśli połączysz, na Twoim własnym Dysku Google.</p></details>
   <details><summary>Czy działa bez internetu?</summary><p>Tak. Wszystko działa bez sieci; synchronizacja z Google nadrobi, gdy sieć wróci.</p></details>
   <details><summary>Czy mogę prowadzić kilka motocykli i samochodów?</summary><p>Tak, ile chcesz. Każdy ma swoje przeglądy, dziennik i statystyki.</p></details>
+  <details><summary>Czy mogę korzystać na komputerze?</summary><p>Tak. Otwórz app.tolimoto.com w przeglądarce na komputerze i połącz Google — to samo konto co na telefonie. Szczegóły w części „Na komputerze”.</p></details>
+  <details><summary>Na komputerze nie widać wpisów z telefonu</summary><p>Sprawdź, czy na obu urządzeniach zalogowano się do tego samego konta Google (widać je w ustawieniach). Jeśli konto jest to samo, naciśnij „Synchronizuj teraz” na telefonie, a potem na komputerze.</p></details>
   <details><summary>A Android?</summary><p>Aplikacja działa w Chrome na Androidzie i instaluje się z jego menu. Powstawała i była testowana najpierw na iPhonie — jeśli coś jest nie tak, <a href="mailto:contact@tolimoto.com">napisz do nas</a>.</p></details>
   <details><summary>Gdzie zadać pytanie lub zgłosić błąd?</summary><p><a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a> lub <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>.</p></details>
 </section>

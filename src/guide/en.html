@@ -24,6 +24,8 @@
     <li><b>Log</b> — all records in one list: search by text and part numbers, filters for service, fill-ups and expenses, date range. Each fill-up shows its consumption: green when it is noticeably below your average, red when well above.</li>
     <li><b>Statistics</b> — spending per year (service, accessories, fuel, insurance and other), cost per kilometre, average consumption and charts. Tap a line to see what it is made of.</li>
     <li><b>Expenses</b> — insurance, inspection, tax and anything else, via the “+” button.</li>
+    <li><b>Spending for a period.</b> Set the “From” and “To” dates in the log — a total for that period appears above the list, split into service and repairs, accessories, fuel and other.</li>
+    <li><b>On a computer</b> the log is a table with columns: date, odometer, type, record, consumption and amount. Click the “Date”, “Odometer” or “Amount” heading to sort.</li>
   </ul>
 </section>
 
@@ -43,13 +45,51 @@
     <li>Sync runs by itself: when you open the app, after each change, and when the network comes back. You can also edit records in the spreadsheet — the changes come back to the app.</li>
     <li>The “Summary” tab is built by the app (schedule, current odometer, spending by year). Edit the data on the other tabs.</li>
     <li>The app can only see the files it created. More in the <a href="{{PRIVACY}}">privacy policy</a>.</li>
+    <li><b>Phone and computer.</b> Sign in to the same Google account on both — your records are shared. Changes made on one device reach the other at the next sync: when the app opens, or with “Sync now” in Settings.</li>
   </ul>
+  <p class="g-warn"><b>Sync works only within one Google account.</b> On your phone, computer and any other device, sign in to the same account. With a different account the app creates a separate spreadsheet — and records from different devices never meet.</p>
   <p class="g-note">During the beta, Google sign-in is open to beta testers only. Everyone else: use backups (below).</p>
+</section>
+
+<section id="desktop">
+  <h2>On a computer</h2>
+  <p>Tolimoto Log also works on a computer — right in the browser. Handy for sorting receipts, entering old records or looking at statistics on a big screen.</p>
+  <ol class="g-steps">
+    <li><b>Open <a href="https://app.tolimoto.com/">app.tolimoto.com</a></b> in Chrome, Edge, Safari or Firefox. On the first screen choose “Continue in the browser”.</li>
+    <li><b>Connect Google</b> — <b>the same account as on your phone</b>. The app finds your spreadsheet, and all records from the phone appear on the computer.</li>
+    <li><b>Installing is optional.</b> In Chrome and Edge: the install icon on the right of the address bar. In Safari on a Mac: File → Add to Dock. The app then opens in its own window.</li>
+  </ol>
+  <ul>
+    <li><b>Menu on the left:</b> “Add record”, the Garage, Log, Schedule and Stats tabs, and Settings at the bottom.</li>
+    <li><b>Forms</b> open as a window in the middle of the screen. Close with Esc or the cross.</li>
+    <li><b>Several vehicles:</b> switch with the dots under the card in the Garage.</li>
+    <li>Without Google, records on the computer are separate from the phone and stay only in that browser.</li>
+  </ul>
+</section>
+
+<section id="keys">
+  <h2>Keyboard shortcuts</h2>
+  <p>On a computer almost everything can be done from the keyboard. Shortcuts work with any keyboard layout and stay out of the way while you type in a field.</p>
+  <table class="g-keys">
+    <tbody>
+      <tr><td><kbd>N</kbd></td><td>“Add record” menu</td></tr>
+      <tr><td><kbd>F</kbd></td><td>fill-up</td></tr>
+      <tr><td><kbd>S</kbd></td><td>service</td></tr>
+      <tr><td><kbd>E</kbd></td><td>expense</td></tr>
+      <tr><td><kbd>O</kbd></td><td>odometer</td></tr>
+      <tr><td><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd></td><td>tabs: Garage, Log, Schedule, Stats</td></tr>
+      <tr><td><kbd>/</kbd></td><td>search the log</td></tr>
+      <tr><td><kbd>Ctrl</kbd> + <kbd>Enter</kbd></td><td>save the open form (⌘ + Enter on a Mac)</td></tr>
+      <tr><td><kbd>Esc</kbd></td><td>close the window</td></tr>
+      <tr><td><kbd>Enter</kbd></td><td>open the selected log row (move between rows with Tab)</td></tr>
+    </tbody>
+  </table>
+  <p class="g-note">Hints are right in the app: on the buttons of the left menu, in the “Add record” menu and in Settings.</p>
 </section>
 
 <section id="data" class="g-key">
   <h2>How not to lose your data</h2>
-  <p class="g-lead">Without Google, your records live <b>only in the app on this phone</b>. If the phone is lost or broken, or the app is deleted, the records are gone. Choose one of the two ways and set it up today.</p>
+  <p class="g-lead">Without Google, your records live <b>only in the app on this device</b>. If the phone is lost or broken, or the app is deleted, the records are gone. Choose one of the two ways and set it up today.</p>
   <div class="g-two">
     <div class="g-card">
       <span class="mono">1 · recommended</span>
@@ -80,6 +120,8 @@
   <details><summary>Does Tolimoto see my records?</summary><p>No. There is no Tolimoto server: data stays on your phone and, if you connect it, in your own Google Drive.</p></details>
   <details><summary>Does it work without internet?</summary><p>Yes. Everything works offline; Google sync catches up when the network is back.</p></details>
   <details><summary>Can I keep several motorcycles and cars?</summary><p>Yes, as many as you like. Each has its own schedule, log and statistics.</p></details>
+  <details><summary>Can I use it on a computer?</summary><p>Yes. Open app.tolimoto.com in a browser on your computer and connect Google — the same account as on your phone. See “On a computer” for details.</p></details>
+  <details><summary>My phone records do not show on the computer</summary><p>Check that both devices are signed in to the same Google account (it is shown in Settings). If it is the same account, tap “Sync now” on the phone, then on the computer.</p></details>
   <details><summary>Android?</summary><p>The app works in Chrome on Android and installs from its menu. It was built and tested on iPhone first — if something looks off, <a href="mailto:contact@tolimoto.com">write to us</a>.</p></details>
   <details><summary>Where do I ask a question or report a bug?</summary><p><a href="mailto:contact@tolimoto.com">contact@tolimoto.com</a> or <a href="https://t.me/tolimoto" target="_blank" rel="noopener">Telegram</a>.</p></details>
 </section>

@@ -422,3 +422,12 @@ footer { border-top: 1px solid var(--line); padding: 70px 0 40px; overflow: hidd
 .sf-menu div { display: flex; align-items: center; justify-content: space-between; padding: 8px 8px; border-radius: 9px; }
 .sf-menu .ic { width: 13px; height: 13px; color: #e8e8ea; }
 @media (min-width: 681px) { .g-body .steps, .g-body .steps.six { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px 22px; } }
+
+/* guide: computer section, shortcuts, sync warning */
+.g-warn { border-left: 3px solid var(--amber); background: rgba(255, 194, 75, 0.06); border-radius: 0 14px 14px 0; padding: 14px 18px; color: var(--paper) !important; }
+.g-warn b { color: var(--amber); }
+.g-keys { width: 100%; border-collapse: collapse; margin: 16px 0 8px; font-size: 16px; }
+.g-keys td { padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.g-keys tr:last-child td { border-bottom: 0; }
+.g-keys td:first-child { white-space: nowrap; width: 1%; padding-left: 0; color: var(--muted); }
+.g-body kbd { display: inline-block; min-width: 28px; padding: 3px 8px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 7px; background: var(--ink-2); color: var(--paper); font: 500 13px/1.3 var(--mono); text-align: center; }
